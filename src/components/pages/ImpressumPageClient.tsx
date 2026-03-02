@@ -25,7 +25,7 @@ export default function ImpressumPageClient() {
           Isella Group Sp. z o.o.
         </h2>
         <div className="text-gray-700 leading-relaxed space-y-1">
-          <p>ul. Bandurskiego 22/4</p>
+          <p>ul. Jana Kasprowicza 22/4</p>
           <p>31-515 Krak&oacute;w</p>
           <p>Poland</p>
         </div>

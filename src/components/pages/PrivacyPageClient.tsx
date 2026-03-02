@@ -83,17 +83,17 @@ export default function PrivacyPageClient() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-isella-blue mb-4">
           {isGerman
-            ? '4. Kontaktformular'
+            ? '4. E-Mail-Kommunikation'
             : isPolish
-              ? '4. Formularz kontaktowy'
-              : '4. Contact Form'}
+              ? '4. Komunikacja e-mailowa'
+              : '4. Email Communication'}
         </h2>
         <p className="text-gray-700 leading-relaxed">
           {isGerman
-            ? 'Wenn du uns per Kontaktformular Anfragen zukommen l\u00e4sst, werden deine Angaben aus dem Anfrageformular inklusive der von dir dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und f\u00fcr den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.'
+            ? 'Wenn du uns per E-Mail kontaktierst, werden deine Nachricht und Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.'
             : isPolish
-              ? 'Je\u015bli wy\u015blesz do nas zapytanie za pomoc\u0105 formularza kontaktowego, Twoje dane z formularza, w tym podane dane kontaktowe, b\u0119d\u0105 przechowywane w celu przetworzenia zapytania i na wypadek dalszych pyta\u0144. Nie udost\u0119pniamy tych danych bez Twojej zgody.'
-              : 'If you send us inquiries via the contact form, your details from the inquiry form, including the contact data you provided, will be stored for the purpose of processing the inquiry and for follow-up questions. We do not share this data without your consent.'}
+              ? 'Gdy skontaktujesz się z nami drogą mailową, Twoja wiadomość i dane kontaktowe będą przechowywane w celu przetworzenia zapytania i na wypadek dalszych pytań. Nie udostępniamy tych danych bez Twojej zgody.'
+              : 'When you contact us via email, your message and contact details will be stored for the purpose of processing your inquiry and for follow-up questions. We do not share this data without your consent.'}
         </p>
       </section>
 

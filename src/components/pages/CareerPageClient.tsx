@@ -1,11 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
-import { Briefcase, Send } from 'lucide-react';
+import { Briefcase, MapPin, Clock, Mail } from 'lucide-react';
 
 export default function CareerPageClient() {
   const t = useTranslations();
+
+  const jobKeys = ['production', 'sales', 'architect', 'marketing'] as const;
 
   return (
     <div>
@@ -47,14 +48,39 @@ export default function CareerPageClient() {
               {t('career.positions.description')}
             </p>
 
-            {/* Apply Button */}
-            <Link
-              href="/kontakt"
-              className="inline-flex items-center gap-2 bg-isella-orange text-white font-semibold px-8 py-4 rounded-lg hover:bg-isella-orange-dark transition-colors text-lg"
-            >
-              <Send className="w-5 h-5" />
-              {t('career.apply')}
-            </Link>
+            {/* Job Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {jobKeys.map((key) => (
+                <div
+                  key={key}
+                  className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="text-xl font-bold text-isella-blue mb-3">
+                    {t(`career.jobs.${key}.title`)}
+                  </h3>
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
+                      <MapPin className="w-4 h-4 text-isella-orange" />
+                      {t(`career.jobs.${key}.location`)}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
+                      <Clock className="w-4 h-4 text-isella-orange" />
+                      {t(`career.jobs.${key}.type`)}
+                    </span>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed text-sm mb-4">
+                    {t(`career.jobs.${key}.description`)}
+                  </p>
+                  <a
+                    href={`mailto:info@isella-group.com?subject=${encodeURIComponent(t(`career.jobs.${key}.title`))}`}
+                    className="inline-flex items-center gap-2 text-isella-orange font-semibold text-sm hover:text-isella-orange-dark transition-colors"
+                  >
+                    <Mail className="w-4 h-4" />
+                    {t('career.apply')}
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
