@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Strona główna",
+    "home": "Strona g\u0142\u00f3wna",
     "aboutUs": "O nas",
     "ourProjects": "Nasze projekty",
     "career": "Kariera",
@@ -8,105 +8,152 @@
   },
   "home": {
     "hero": {
-      "title": "Jesteśmy Isella Group",
-      "subtitle": "Rozwijamy innowacyjne projekty biznesowe na rynkach międzynarodowych",
-      "cta": "Dowiedz się więcej"
+      "title": "Jeste\u015bmy Isella Group",
+      "subtitle": "Rozwijamy innowacyjne projekty biznesowe na rynkach mi\u0119dzynarodowych",
+      "cta": "Dowiedz si\u0119 wi\u0119cej"
     },
     "about": {
-      "title": "Kim jesteśmy",
-      "description": "Rozwijamy {innovative} na rynkach międzynarodowych. Nasz zespół {specialists} obejmuje obszary od marketingu i sprzedaży po zarządzanie projektami i prace budowlane. Naszym celem jest tworzenie {products}, które zmienią świat.",
-      "descriptionPlain": "Rozwijamy innowacyjne projekty biznesowe na rynkach międzynarodowych. Nasz zespół specjalistów obejmuje obszary od marketingu i sprzedaży po zarządzanie projektami i prace budowlane. Naszym celem jest tworzenie innowacyjnych produktów, które zmienią świat.",
-      "highlight": "Innowacja, kreatywność i praca zespołowa napędzają wszystko, co robimy.",
-      "bold1": "innowacyjne projekty biznesowe",
-      "bold2": "specjalistów",
-      "bold3": "innowacyjnych produktów"
+      "title": "Kim jeste\u015bmy",
+      "description": "Rozwijamy {innovative} — od dom\u00f3w modu\u0142owych i tiny houses po doradztwo i zarz\u0105dzanie markami. Nasz zesp\u00f3\u0142 {specialists} obejmuje architektur\u0119, produkcj\u0119, sprzeda\u017c i mi\u0119dzynarodowe zarz\u0105dzanie projektami. Naszym celem jest dostarczanie {products}, kt\u00f3re wyznaczaj\u0105 nowe standardy w zr\u00f3wnowa\u017conym budownictwie.",
+      "descriptionPlain": "Rozwijamy innowacyjne projekty nieruchomo\u015bciowe i markowe — od dom\u00f3w modu\u0142owych i tiny houses po doradztwo i zarz\u0105dzanie markami. Nasz zesp\u00f3\u0142 specjalist\u00f3w obejmuje architektur\u0119, produkcj\u0119, sprzeda\u017c i mi\u0119dzynarodowe zarz\u0105dzanie projektami. Naszym celem jest dostarczanie wysokiej jako\u015bci, zr\u00f3wnowa\u017conych produkt\u00f3w, kt\u00f3re wyznaczaj\u0105 nowe standardy w zr\u00f3wnowa\u017conym budownictwie.",
+      "highlight": "Domy modu\u0142owe, tiny houses i zr\u00f3wnowa\u017cone marki — budowane przez zesp\u00f3\u0142, kt\u00f3ry my\u015bli globalnie.",
+      "bold1": "innowacyjne projekty nieruchomo\u015bciowe i markowe",
+      "bold2": "specjalist\u00f3w",
+      "bold3": "wysokiej jako\u015bci, zr\u00f3wnowa\u017conych produkt\u00f3w"
     },
     "values": {
-      "title": "Co nas napędza",
+      "title": "Co nas nap\u0119dza",
       "innovation": {
         "title": "Innowacja",
-        "description": "Dostosowujemy się do nowych trendów rynkowych i tworzymy nowoczesne rozwiązania."
+        "description": "Dostosowujemy si\u0119 do nowych trend\u00f3w rynkowych i tworzymy nowoczesne rozwi\u0105zania."
       },
       "teamwork": {
-        "title": "Praca zespołowa",
-        "description": "Nasz wielokulturowy zespół wnosi różnorodne perspektywy do każdego projektu."
+        "title": "Praca zespo\u0142owa",
+        "description": "Nasz wielokulturowy zesp\u00f3\u0142 wnosi r\u00f3\u017cnorodne perspektywy do ka\u017cdego projektu."
       },
       "experience": {
-        "title": "Doświadczenie",
-        "description": "Lata wiedzy w wielu branżach i na międzynarodowych rynkach."
+        "title": "Do\u015bwiadczenie",
+        "description": "Lata wiedzy w wielu bran\u017cach i na mi\u0119dzynarodowych rynkach."
       },
       "creativity": {
-        "title": "Kreatywność",
-        "description": "Myślimy nieszablonowo, aby dostarczyć unikalne rozwiązania dla naszych klientów."
+        "title": "Kreatywno\u015b\u0107",
+        "description": "My\u015blimy nieszablonowo, aby dostarczy\u0107 unikalne rozwi\u0105zania dla naszych klient\u00f3w."
       }
     },
     "cta": {
-      "title": "Gotowy, aby rozpocząć swój projekt?",
-      "description": "Skontaktuj się z nami i zbudujmy razem coś wspaniałego.",
-      "button": "Skontaktuj się"
+      "title": "Gotowy, aby rozpocz\u0105\u0107 sw\u00f3j projekt?",
+      "description": "Skontaktuj si\u0119 z nami i zbudujmy razem co\u015b wspania\u0142ego.",
+      "button": "Skontaktuj si\u0119"
     },
     "teamwork": {
-      "description": "Jesteśmy zespołem {bold}, których cechuje praca zespołowa, kreatywność i doświadczenie. Współpracujemy na rzecz sukcesu Isella Group!",
-      "descriptionPlain": "Jesteśmy zespołem ambitnych ludzi, których cechuje praca zespołowa, kreatywność i doświadczenie. Współpracujemy na rzecz sukcesu Isella Group!",
-      "bold": "ambitnych ludzi",
-      "closing": "Współpracujemy na rzecz sukcesu Isella Group!"
+      "description": "Jeste\u015bmy zespo\u0142em {bold} — architekt\u00f3w, budowniczych, marketer\u00f3w i kierownik\u00f3w projekt\u00f3w pracuj\u0105cych w Niemczech, Polsce i nie tylko. Wsp\u00f3\u0142pracujemy na rzecz sukcesu Isella Group!",
+      "descriptionPlain": "Jeste\u015bmy zespo\u0142em ambitnych profesjonalist\u00f3w — architekt\u00f3w, budowniczych, marketer\u00f3w i kierownik\u00f3w projekt\u00f3w pracuj\u0105cych w Niemczech, Polsce i nie tylko. Wsp\u00f3\u0142pracujemy na rzecz sukcesu Isella Group!",
+      "bold": "ambitnych profesjonalist\u00f3w",
+      "closing": "Wsp\u00f3\u0142pracujemy na rzecz sukcesu Isella Group!"
     },
     "innovation": {
-      "description": "Innowacja, cyfryzacja i globalizacja to kluczowe cechy naszych projektów. Innowacyjne produkty, cyfrowe kanały sprzedaży i międzynarodowy zespół stanowią fundament naszych firm.",
-      "closing": "Nasze projekty są odpowiedzią na zmieniające się otoczenie i rosnące wymagania klientów."
+      "description": "Nasz flagowy projekt Berghaus produkuje domy modu\u0142owe i tiny houses w naszym w\u0142asnym zak\u0142adzie w Kierspe, Niemcy. Dzi\u0119ki cyfrowym kana\u0142om sprzeda\u017cy i mi\u0119dzynarodowemu zespo\u0142owi w trzech krajach dostarczamy zr\u00f3wnowa\u017cone rozwi\u0105zania mieszkaniowe klientom w ca\u0142ej Europie.",
+      "closing": "Od produkcji po dostaw\u0119 — kontrolujemy ca\u0142y proces, aby zapewni\u0107 najwy\u017csz\u0105 jako\u015b\u0107."
     },
     "contactSection": {
-      "heading": "Chodzi o to, co możemy osiągnąć razem.",
-      "subheading": "Obserwuj nasze media społecznościowe, aby być na bieżąco.",
-      "button": "Skontaktuj się"
+      "heading": "Chodzi o to, co mo\u017cemy osi\u0105gn\u0105\u0107 razem.",
+      "subheading": "Obserwuj nasze media spo\u0142eczno\u015bciowe, aby by\u0107 na bie\u017c\u0105co.",
+      "button": "Skontaktuj si\u0119"
     }
   },
   "about": {
     "title": "O nas",
     "subtitle": "Nasza historia",
-    "story": "Isella Group została założona w 2020 roku przez Dennisa Czekallę. Koncentrujemy się na rozwijaniu innowacyjnych przedsięwzięć biznesowych, począwszy od naszego flagowego projektu Berghaus – Tiny House. Od tego czasu dynamicznie się rozwijamy, budując własne struktury produkcji i sprzedaży, zdobywając zaufanie klientów indywidualnych i partnerów biznesowych.",
+    "story": "Isella Group zosta\u0142a za\u0142o\u017cona w 2020 roku przez Dennisa Czekall\u0119. Koncentrujemy si\u0119 na rozwijaniu innowacyjnych przedsi\u0119wzi\u0119\u0107 biznesowych, pocz\u0105wszy od naszego flagowego projektu Berghaus — Tiny House & Domy Modu\u0142owe. Od tego czasu dynamicznie si\u0119 rozwijamy, buduj\u0105c w\u0142asny zak\u0142ad produkcyjny w Kierspe i ustanawiaj\u0105c struktury sprzeda\u017cy w ca\u0142ej Europie.",
     "team": {
-      "title": "Nasz zespół",
-      "description": "Nasz zespół składa się z ambitnych, kreatywnych profesjonalistów cechujących się dużą różnorodnością kulturalną i językową. Członkowie zespołu wnoszą różnorodną wiedzę z wielu dziedzin, w tym marketingu, sprzedaży, zarządzania projektami, administracji, architektury i budownictwa."
+      "title": "Nasz zesp\u00f3\u0142",
+      "description": "Nasz zesp\u00f3\u0142 sk\u0142ada si\u0119 z ambitnych, kreatywnych profesjonalist\u00f3w cechuj\u0105cych si\u0119 du\u017c\u0105 r\u00f3\u017cnorodno\u015bci\u0105 kulturaln\u0105 i j\u0119zykow\u0105. Cz\u0142onkowie zespo\u0142u wnosz\u0105 r\u00f3\u017cnorodn\u0105 wiedz\u0119 z wielu dziedzin, w tym marketingu, sprzeda\u017cy, zarz\u0105dzania projektami, administracji, architektury i budownictwa.",
+      "members": {
+        "dennis": {
+          "name": "Dennis Czekalla",
+          "role": "CEO i Za\u0142o\u017cyciel"
+        }
+      }
     },
     "mission": {
       "title": "Nasza misja",
-      "description": "Jesteśmy agencją zaangażowaną w pomoc klientom w międzynarodowej ekspansji ich biznesu poprzez naszą ustaloną sieć kontaktów i wielonarodowe środowisko."
+      "description": "Jeste\u015bmy zaanga\u017cowani w tworzenie zr\u00f3wnowa\u017conych rozwi\u0105za\u0144 mieszkaniowych i budowanie marek, kt\u00f3re maj\u0105 znaczenie — nap\u0119dzani przez mi\u0119dzynarodowy zesp\u00f3\u0142 i praktyczne podej\u015bcie do biznesu."
     }
   },
   "projects": {
     "title": "Nasze projekty",
-    "subtitle": "Odkryj nasze przedsięwzięcia",
+    "subtitle": "Odkryj nasze przedsi\u0119wzi\u0119cia",
     "berghaus": {
-      "title": "Berghaus – Tiny House",
-      "description": "Nasz flagowy projekt: mobilne drewniane domy z wysokiej jakości naturalnych materiałów z naciskiem na zrównoważony rozwój. Konfigurowalne według indywidualnych specyfikacji i produkowane we własnym zakładzie od 2022 roku.",
-      "cta": "Odwiedź Berghaus"
+      "title": "Berghaus — Tiny House & Domy Modu\u0142owe",
+      "description": "Nasz flagowy projekt: domy modu\u0142owe i tiny houses z wysokiej jako\u015bci naturalnych materia\u0142\u00f3w, produkowane w naszym w\u0142asnym zak\u0142adzie w Kierspe, Niemcy. Konfigurowalne wed\u0142ug indywidualnych specyfikacji, produkowane we w\u0142asnym zakresie od 2022 roku.",
+      "cta": "Odwied\u017a Berghaus"
+    },
+    "brands": {
+      "title": "Nasze marki",
+      "tri2thrive": {
+        "title": "Tri2Thrive",
+        "description": "Marka sportowa i wytrzyma\u0142o\u015bciowa promuj\u0105ca aktywny, zdrowy styl \u017cycia poprzez triathlon i aktywno\u015bci na \u015bwie\u017cym powietrzu."
+      },
+      "becz": {
+        "title": "BECZ",
+        "description": "Doradztwo biznesowe i przedsi\u0119biorczo\u015b\u0107 — pomagamy firmom rosn\u0105\u0107 i rozwija\u0107 si\u0119 mi\u0119dzynarodowo."
+      },
+      "denniscz": {
+        "title": "dennis.cz",
+        "description": "Marka osobista CEO Dennisa Czekalli — m\u00f3wca, przedsi\u0119biorca i sportowiec wytrzyma\u0142o\u015bciowy."
+      }
+    },
+    "production": {
+      "title": "Zak\u0142ad produkcyjny",
+      "description": "Nasze domy s\u0105 produkowane w naszym zak\u0142adzie produkcyjnym w Kierspe, Niemcy.",
+      "address": "Beethovenstr. 9, 58566 Kierspe, Niemcy"
     }
   },
   "career": {
     "title": "Kariera",
-    "subtitle": "Dołącz do Isella Group!",
-    "description": "Jesteśmy młodą, dynamicznie rozwijającą się firmą złożoną z kreatywnych i ambitnych ludzi. Poszukujemy kandydatów zarówno na stanowiska biurowe, jak i budowlane.",
-    "cta": "Jesteśmy otwarci na nowych ludzi, którzy swoimi ciekawymi pomysłami i zaangażowaniem przyczynią się do sukcesu naszych projektów.",
-    "apply": "Aplikuj teraz",
+    "subtitle": "Do\u0142\u0105cz do Isella Group!",
+    "description": "Jeste\u015bmy m\u0142od\u0105, dynamicznie rozwijaj\u0105c\u0105 si\u0119 firm\u0105 z\u0142o\u017con\u0105 z kreatywnych i ambitnych ludzi. Poszukujemy kandydat\u00f3w zar\u00f3wno na stanowiska biurowe, jak i budowlane.",
+    "cta": "Jeste\u015bmy otwarci na nowych ludzi, kt\u00f3rzy swoimi ciekawymi pomys\u0142ami i zaanga\u017cowaniem przyczyni\u0105 si\u0119 do sukcesu naszych projekt\u00f3w.",
+    "apply": "Aplikuj przez e-mail",
     "positions": {
       "title": "Otwarte stanowiska",
-      "description": "Wyślij nam swoją aplikację i opowiedz o sobie."
+      "description": "Zainteresowany? Wy\u015blij swoj\u0105 aplikacj\u0119 na info@isella-group.com"
+    },
+    "jobs": {
+      "production": {
+        "title": "Pracownik produkcji",
+        "location": "Kierspe, Niemcy",
+        "type": "Pe\u0142ny etat",
+        "description": "Do\u0142\u0105cz do naszego zespo\u0142u produkcyjnego buduj\u0105cego domy modu\u0142owe i tiny houses. Do\u015bwiadczenie w stolarce lub budownictwie mile widziane."
+      },
+      "sales": {
+        "title": "Kierownik sprzeda\u017cy",
+        "location": "Kierspe, Niemcy / Zdalnie",
+        "type": "Pe\u0142ny etat",
+        "description": "Nap\u0119dzaj wzrost, \u0142\u0105cz\u0105c klient\u00f3w z naszymi zr\u00f3wnowa\u017conymi rozwi\u0105zaniami mieszkaniowymi. Preferowane do\u015bwiadczenie mi\u0119dzynarodowe."
+      },
+      "architect": {
+        "title": "Architekt / Projektant",
+        "location": "Krak\u00f3w, Polska / Zdalnie",
+        "type": "Pe\u0142ny etat",
+        "description": "Projektuj innowacyjne koncepcje dom\u00f3w modu\u0142owych i tiny houses. Wymagana bieg\u0142o\u015b\u0107 w CAD i pasja do zr\u00f3wnowa\u017conej architektury."
+      },
+      "marketing": {
+        "title": "Specjalista ds. marketingu",
+        "location": "Zdalnie",
+        "type": "Pe\u0142ny etat / Cz\u0119\u015b\u0107 etatu",
+        "description": "Tw\u00f3rz przekonuj\u0105ce tre\u015bci i kampanie dla naszych marek. Niezb\u0119dne do\u015bwiadczenie w mediach spo\u0142eczno\u015bciowych i marketingu cyfrowym."
+      }
     }
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Chętnie odpowiemy na wszystkie pytania",
-    "description": "Nie przegap okazji, skontaktuj się z Isella Group. Wysłuchamy Twoich potrzeb i przygotujemy odpowiednią ofertę.",
-    "form": {
-      "name": "Twoje imię",
-      "email": "Twój e-mail",
-      "phone": "Twój telefon",
-      "message": "Twoja wiadomość",
-      "submit": "Wyślij wiadomość",
-      "success": "Dziękujemy! Twoja wiadomość została wysłana.",
-      "error": "Coś poszło nie tak. Spróbuj ponownie."
-    },
+    "subtitle": "Ch\u0119tnie odpowiemy na wszystkie pytania",
+    "description": "Nie przegap okazji, skontaktuj si\u0119 z Isella Group. Wys\u0142uchamy Twoich potrzeb i przygotujemy odpowiedni\u0105 ofert\u0119.",
+    "emailCta": "Napisz do nas",
+    "callCta": "Zadzwo\u0144",
+    "emailDescription": "Wy\u015blij nam wiadomo\u015b\u0107, a odpowiemy jak najszybciej.",
+    "callDescription": "Porozmawiaj bezpo\u015brednio z naszym zespo\u0142em.",
     "offices": {
       "germany": {
         "title": "Niemcy",
@@ -118,20 +165,20 @@
       "poland": {
         "title": "Polska",
         "company": "Isella Group Sp. z o.o.",
-        "address": "ul. Bandurskiego 22/4, 31-515 Kraków",
+        "address": "ul. Jana Kasprowicza 22/4, 31-515 Krak\u00f3w",
         "phone": "+48 506 057 041",
         "email": "info@isella-group.com"
       }
     }
   },
   "footer": {
-    "rights": "Wszelkie prawa zastrzeżone.",
-    "privacy": "Polityka prywatności",
+    "rights": "Wszelkie prawa zastrze\u017cone.",
+    "privacy": "Polityka prywatno\u015bci",
     "impressum": "Impressum"
   },
   "common": {
-    "learnMore": "Dowiedz się więcej",
-    "contactUs": "Skontaktuj się",
+    "learnMore": "Dowiedz si\u0119 wi\u0119cej",
+    "contactUs": "Skontaktuj si\u0119",
     "readMore": "Czytaj dalej"
   }
 }

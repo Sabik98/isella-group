@@ -14,22 +14,22 @@
     },
     "about": {
       "title": "Who We Are",
-      "description": "We develop {innovative} in international markets. Our team of {specialists} covers areas from marketing and sales to project management and construction work. Our goal is to create {products} that will change the world.",
-      "descriptionPlain": "We develop innovative business projects in international markets. Our team of specialists covers areas from marketing and sales to project management and construction work. Our goal is to create innovative products that will change the world.",
-      "highlight": "Innovation, creativity, and teamwork drive everything we do.",
-      "bold1": "innovative business projects",
+      "description": "We develop {innovative} — from modular houses and tiny houses to consulting and brand management. Our team of {specialists} covers architecture, production, sales, and international project management. Our goal is to deliver {products} that set new standards in sustainable living.",
+      "descriptionPlain": "We develop innovative real estate and brand projects — from modular houses and tiny houses to consulting and brand management. Our team of specialists covers architecture, production, sales, and international project management. Our goal is to deliver high-quality, sustainable products that set new standards in sustainable living.",
+      "highlight": "Modular houses, tiny houses, and sustainable brands — built by a team that thinks globally.",
+      "bold1": "innovative real estate and brand projects",
       "bold2": "specialists",
-      "bold3": "innovative products"
+      "bold3": "high-quality, sustainable products"
     },
     "teamwork": {
-      "description": "We are a team of {bold} who are characterized by teamwork, creativity, and experience. We work together for the success of Isella Group!",
-      "descriptionPlain": "We are a team of ambitious people who are characterized by teamwork, creativity, and experience. We work together for the success of Isella Group!",
-      "bold": "ambitious people",
+      "description": "We are a team of {bold} — architects, builders, marketers, and project managers working across Germany, Poland, and beyond. We work together for the success of Isella Group!",
+      "descriptionPlain": "We are a team of ambitious professionals — architects, builders, marketers, and project managers working across Germany, Poland, and beyond. We work together for the success of Isella Group!",
+      "bold": "ambitious professionals",
       "closing": "We work together for the success of Isella Group!"
     },
     "innovation": {
-      "description": "Innovation, digitalization, and globalization are key features of our projects. Innovative products, digital sales channels, and an international team are the foundation of our companies.",
-      "closing": "Our projects are a response to the changing environment and growing customer requirements."
+      "description": "Our flagship project Berghaus produces modular houses and tiny houses in our own facility in Kierspe, Germany. With digital sales channels and an international team across three countries, we bring sustainable living solutions to customers throughout Europe.",
+      "closing": "From production to delivery — we control the entire process to ensure the highest quality."
     },
     "contactSection": {
       "heading": "It's all about what we can do together.",
@@ -64,23 +64,49 @@
   "about": {
     "title": "About Us",
     "subtitle": "Our Story",
-    "story": "Isella Group was established in 2020 by Dennis Czekalla. We focus on developing innovative business ventures, starting with our flagship project Berghaus \u2013 Tiny House. Since then, we have rapidly expanded, building dedicated production and sales operations while gaining the trust of individual customers and business partners alike.",
+    "story": "Isella Group was established in 2020 by Dennis Czekalla. We focus on developing innovative business ventures, starting with our flagship project Berghaus — Tiny House & Modular Homes. Since then, we have rapidly expanded, building our own production facility in Kierspe, Germany, and establishing sales operations across Europe.",
     "team": {
       "title": "Our Team",
-      "description": "Our workforce comprises ambitious, creative professionals characterized by significant cultural and linguistic diversity. Team members bring varied expertise across multiple disciplines, including marketing, sales, project management, administrative roles, architecture, and construction."
+      "description": "Our workforce comprises ambitious, creative professionals characterized by significant cultural and linguistic diversity. Team members bring varied expertise across multiple disciplines, including marketing, sales, project management, administrative roles, architecture, and construction.",
+      "members": {
+        "dennis": {
+          "name": "Dennis Czekalla",
+          "role": "CEO & Founder"
+        }
+      }
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We are an agency committed to helping clients expand their business internationally through our established network and multinational environment."
+      "description": "We are committed to creating sustainable living solutions and building brands that make a difference — powered by an international team and a hands-on approach to business."
     }
   },
   "projects": {
     "title": "Our Projects",
     "subtitle": "Discover Our Ventures",
     "berghaus": {
-      "title": "Berghaus \u2013 Tiny House",
-      "description": "Our flagship project: mobile wooden dwellings built from high-quality natural materials with emphasis on sustainability. Customizable to individual specifications and manufactured in-house since 2022.",
+      "title": "Berghaus — Tiny House & Modular Homes",
+      "description": "Our flagship project: modular houses and tiny houses built from high-quality natural materials in our own production facility in Kierspe, Germany. Customizable to individual specifications and manufactured in-house since 2022.",
       "cta": "Visit Berghaus"
+    },
+    "brands": {
+      "title": "Our Brands",
+      "tri2thrive": {
+        "title": "Tri2Thrive",
+        "description": "Sports and endurance brand promoting an active, healthy lifestyle through triathlon and outdoor activities."
+      },
+      "becz": {
+        "title": "BECZ",
+        "description": "Business consulting and entrepreneurship — helping companies grow and expand internationally."
+      },
+      "denniscz": {
+        "title": "dennis.cz",
+        "description": "Personal brand of CEO Dennis Czekalla — speaker, entrepreneur, and endurance athlete."
+      }
+    },
+    "production": {
+      "title": "Production Facility",
+      "description": "Our houses are manufactured at our production site in Kierspe, Germany.",
+      "address": "Beethovenstr. 9, 58566 Kierspe, Germany"
     }
   },
   "career": {
@@ -88,25 +114,46 @@
     "subtitle": "Join Isella Group!",
     "description": "We are a young, rapidly growing company made up of creative and ambitious people. We are looking for candidates for both office and construction positions.",
     "cta": "We are open to new people who, with their interesting ideas and commitment, will contribute to the success of our projects.",
-    "apply": "Apply Now",
+    "apply": "Apply via Email",
     "positions": {
       "title": "Open Positions",
-      "description": "Send us your application and tell us about yourself."
+      "description": "Interested? Send your application to info@isella-group.com"
+    },
+    "jobs": {
+      "production": {
+        "title": "Production Worker",
+        "location": "Kierspe, Germany",
+        "type": "Full-time",
+        "description": "Join our production team building modular houses and tiny houses. Experience in woodworking or construction is a plus."
+      },
+      "sales": {
+        "title": "Sales Manager",
+        "location": "Kierspe, Germany / Remote",
+        "type": "Full-time",
+        "description": "Drive growth by connecting customers with our sustainable housing solutions. International experience preferred."
+      },
+      "architect": {
+        "title": "Architect / Designer",
+        "location": "Krak\u00f3w, Poland / Remote",
+        "type": "Full-time",
+        "description": "Design innovative modular and tiny house concepts. CAD proficiency and passion for sustainable architecture required."
+      },
+      "marketing": {
+        "title": "Marketing Specialist",
+        "location": "Remote",
+        "type": "Full-time / Part-time",
+        "description": "Create compelling content and campaigns for our brands. Social media and digital marketing experience essential."
+      }
     }
   },
   "contact": {
     "title": "Contact",
     "subtitle": "Happy to answer all your questions",
     "description": "Don't miss the opportunity, contact Isella Group. We will listen to your needs and formulate the appropriate offer.",
-    "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "phone": "Your Phone",
-      "message": "Your Message",
-      "submit": "Send Message",
-      "success": "Thank you! Your message has been sent.",
-      "error": "Something went wrong. Please try again."
-    },
+    "emailCta": "Email Us",
+    "callCta": "Call Us",
+    "emailDescription": "Send us a message and we'll get back to you promptly.",
+    "callDescription": "Speak directly with our team.",
     "offices": {
       "germany": {
         "title": "Germany",
@@ -118,7 +165,7 @@
       "poland": {
         "title": "Poland",
         "company": "Isella Group Sp. z o.o.",
-        "address": "ul. Bandurskiego 22/4, 31-515 Krak\u00f3w",
+        "address": "ul. Jana Kasprowicza 22/4, 31-515 Krak\u00f3w",
         "phone": "+48 506 057 041",
         "email": "info@isella-group.com"
       }

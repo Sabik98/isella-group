@@ -14,12 +14,12 @@
     },
     "about": {
       "title": "Wer wir sind",
-      "description": "Wir entwickeln {innovative} auf internationalen Märkten. Unser Team von {specialists} deckt Bereiche von Marketing und Vertrieb bis hin zu Projektmanagement und Bauarbeiten ab. Unser Ziel ist es, {products} zu schaffen, die die Welt verändern.",
-      "descriptionPlain": "Wir entwickeln innovative Geschäftsprojekte auf internationalen Märkten. Unser Team von Spezialisten deckt Bereiche von Marketing und Vertrieb bis hin zu Projektmanagement und Bauarbeiten ab. Unser Ziel ist es, innovative Produkte zu schaffen, die die Welt verändern.",
-      "highlight": "Innovation, Kreativität und Teamarbeit treiben alles an, was wir tun.",
-      "bold1": "innovative Geschäftsprojekte",
+      "description": "Wir entwickeln {innovative} — von Modulhäusern und Tiny Houses bis hin zu Beratung und Markenmanagement. Unser Team von {specialists} deckt Architektur, Produktion, Vertrieb und internationales Projektmanagement ab. Unser Ziel ist es, {products} zu liefern, die neue Maßstäbe im nachhaltigen Wohnen setzen.",
+      "descriptionPlain": "Wir entwickeln innovative Immobilien- und Markenprojekte — von Modulhäusern und Tiny Houses bis hin zu Beratung und Markenmanagement. Unser Team von Spezialisten deckt Architektur, Produktion, Vertrieb und internationales Projektmanagement ab. Unser Ziel ist es, hochwertige, nachhaltige Produkte zu liefern, die neue Maßstäbe im nachhaltigen Wohnen setzen.",
+      "highlight": "Modulhäuser, Tiny Houses und nachhaltige Marken — gebaut von einem Team, das global denkt.",
+      "bold1": "innovative Immobilien- und Markenprojekte",
       "bold2": "Spezialisten",
-      "bold3": "innovative Produkte"
+      "bold3": "hochwertige, nachhaltige Produkte"
     },
     "values": {
       "title": "Was uns antreibt",
@@ -46,14 +46,14 @@
       "button": "Kontaktiere uns"
     },
     "teamwork": {
-      "description": "Wir sind ein Team von {bold}, die sich durch Teamarbeit, Kreativität und Erfahrung auszeichnen. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
-      "descriptionPlain": "Wir sind ein Team von ambitionierten Menschen, die sich durch Teamarbeit, Kreativität und Erfahrung auszeichnen. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
-      "bold": "ambitionierten Menschen",
+      "description": "Wir sind ein Team von {bold} — Architekten, Bauarbeiter, Marketingspezialisten und Projektmanager, die in Deutschland, Polen und darüber hinaus arbeiten. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
+      "descriptionPlain": "Wir sind ein Team von ambitionierten Profis — Architekten, Bauarbeiter, Marketingspezialisten und Projektmanager, die in Deutschland, Polen und darüber hinaus arbeiten. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
+      "bold": "ambitionierten Profis",
       "closing": "Wir arbeiten gemeinsam für den Erfolg der Isella Group!"
     },
     "innovation": {
-      "description": "Innovation, Digitalisierung und Globalisierung sind Schlüsselmerkmale unserer Projekte. Innovative Produkte, digitale Vertriebskanäle und ein internationales Team bilden das Fundament unserer Unternehmen.",
-      "closing": "Unsere Projekte sind eine Antwort auf das sich verändernde Umfeld und die wachsenden Kundenanforderungen."
+      "description": "Unser Flaggschiffprojekt Berghaus produziert Modulhäuser und Tiny Houses in unserer eigenen Fertigung in Kierspe, Deutschland. Mit digitalen Vertriebskanälen und einem internationalen Team in drei Ländern bringen wir nachhaltige Wohnlösungen zu Kunden in ganz Europa.",
+      "closing": "Von der Produktion bis zur Lieferung — wir kontrollieren den gesamten Prozess, um höchste Qualität zu gewährleisten."
     },
     "contactSection": {
       "heading": "Es geht darum, was wir gemeinsam erreichen können.",
@@ -64,23 +64,49 @@
   "about": {
     "title": "Über uns",
     "subtitle": "Unsere Geschichte",
-    "story": "Die Isella Group wurde 2020 von Dennis Czekalla gegründet. Wir konzentrieren uns auf die Entwicklung innovativer Geschäftsvorhaben, angefangen mit unserem Flaggschiffprojekt Berghaus – Tiny House. Seitdem haben wir uns rasant weiterentwickelt, eigene Produktions- und Vertriebsstrukturen aufgebaut und das Vertrauen von Privatkunden und Geschäftspartnern gleichermaßen gewonnen.",
+    "story": "Die Isella Group wurde 2020 von Dennis Czekalla gegründet. Wir konzentrieren uns auf die Entwicklung innovativer Geschäftsvorhaben, angefangen mit unserem Flaggschiffprojekt Berghaus — Tiny House & Modulhäuser. Seitdem haben wir uns rasant weiterentwickelt, eine eigene Produktionsstätte in Kierspe aufgebaut und Vertriebsstrukturen in ganz Europa etabliert.",
     "team": {
       "title": "Unser Team",
-      "description": "Unsere Belegschaft besteht aus ambitionierten, kreativen Fachkräften, die sich durch große kulturelle und sprachliche Vielfalt auszeichnen. Die Teammitglieder bringen vielfältige Expertise in verschiedenen Disziplinen mit, darunter Marketing, Vertrieb, Projektmanagement, Verwaltung, Architektur und Bauwesen."
+      "description": "Unsere Belegschaft besteht aus ambitionierten, kreativen Fachkräften, die sich durch große kulturelle und sprachliche Vielfalt auszeichnen. Die Teammitglieder bringen vielfältige Expertise in verschiedenen Disziplinen mit, darunter Marketing, Vertrieb, Projektmanagement, Verwaltung, Architektur und Bauwesen.",
+      "members": {
+        "dennis": {
+          "name": "Dennis Czekalla",
+          "role": "CEO & Gründer"
+        }
+      }
     },
     "mission": {
       "title": "Unsere Mission",
-      "description": "Wir sind eine Agentur, die sich dafür einsetzt, Kunden bei der internationalen Expansion ihres Geschäfts durch unser etabliertes Netzwerk und multinationales Umfeld zu unterstützen."
+      "description": "Wir setzen uns dafür ein, nachhaltige Wohnlösungen zu schaffen und Marken aufzubauen, die einen Unterschied machen — angetrieben von einem internationalen Team und einem praxisnahen Ansatz."
     }
   },
   "projects": {
     "title": "Unsere Projekte",
     "subtitle": "Entdecke unsere Vorhaben",
     "berghaus": {
-      "title": "Berghaus – Tiny House",
-      "description": "Unser Flaggschiffprojekt: mobile Holzhäuser aus hochwertigen Naturmaterialien mit Schwerpunkt auf Nachhaltigkeit. Individuell konfigurierbar und seit 2022 in eigener Produktion gefertigt.",
+      "title": "Berghaus — Tiny House & Modulhäuser",
+      "description": "Unser Flaggschiffprojekt: Modulhäuser und Tiny Houses aus hochwertigen Naturmaterialien, gefertigt in unserer eigenen Produktion in Kierspe, Deutschland. Individuell konfigurierbar und seit 2022 in Eigenproduktion.",
       "cta": "Berghaus besuchen"
+    },
+    "brands": {
+      "title": "Unsere Marken",
+      "tri2thrive": {
+        "title": "Tri2Thrive",
+        "description": "Sport- und Ausdauermarke, die einen aktiven, gesunden Lebensstil durch Triathlon und Outdoor-Aktivitäten fördert."
+      },
+      "becz": {
+        "title": "BECZ",
+        "description": "Unternehmensberatung und Entrepreneurship — wir helfen Unternehmen, international zu wachsen und zu expandieren."
+      },
+      "denniscz": {
+        "title": "dennis.cz",
+        "description": "Persönliche Marke von CEO Dennis Czekalla — Speaker, Unternehmer und Ausdauersportler."
+      }
+    },
+    "production": {
+      "title": "Produktionsstätte",
+      "description": "Unsere Häuser werden in unserer Produktionsstätte in Kierspe, Deutschland gefertigt.",
+      "address": "Beethovenstr. 9, 58566 Kierspe, Deutschland"
     }
   },
   "career": {
@@ -88,25 +114,46 @@
     "subtitle": "Werde Teil der Isella Group!",
     "description": "Wir sind ein junges, schnell wachsendes Unternehmen aus kreativen und ambitionierten Menschen. Wir suchen Kandidaten sowohl für Büro- als auch für Baupositionen.",
     "cta": "Wir sind offen für neue Menschen, die mit ihren interessanten Ideen und ihrem Engagement zum Erfolg unserer Projekte beitragen.",
-    "apply": "Jetzt bewerben",
+    "apply": "Per E-Mail bewerben",
     "positions": {
       "title": "Offene Stellen",
-      "description": "Schick uns deine Bewerbung und erzähl uns von dir."
+      "description": "Interesse? Schick deine Bewerbung an info@isella-group.com"
+    },
+    "jobs": {
+      "production": {
+        "title": "Produktionsmitarbeiter",
+        "location": "Kierspe, Deutschland",
+        "type": "Vollzeit",
+        "description": "Werde Teil unseres Produktionsteams beim Bau von Modulhäusern und Tiny Houses. Erfahrung in Holzverarbeitung oder Bau ist von Vorteil."
+      },
+      "sales": {
+        "title": "Vertriebsmanager",
+        "location": "Kierspe, Deutschland / Remote",
+        "type": "Vollzeit",
+        "description": "Treibe das Wachstum voran, indem du Kunden mit unseren nachhaltigen Wohnlösungen verbindest. Internationale Erfahrung bevorzugt."
+      },
+      "architect": {
+        "title": "Architekt / Designer",
+        "location": "Krakau, Polen / Remote",
+        "type": "Vollzeit",
+        "description": "Entwirf innovative Modulhaus- und Tiny-House-Konzepte. CAD-Kenntnisse und Leidenschaft für nachhaltige Architektur erforderlich."
+      },
+      "marketing": {
+        "title": "Marketing-Spezialist",
+        "location": "Remote",
+        "type": "Vollzeit / Teilzeit",
+        "description": "Erstelle überzeugende Inhalte und Kampagnen für unsere Marken. Social-Media- und Digital-Marketing-Erfahrung unerlässlich."
+      }
     }
   },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Wir beantworten gerne alle deine Fragen",
     "description": "Verpasse nicht die Gelegenheit, kontaktiere Isella Group. Wir hören dir zu und erstellen das passende Angebot.",
-    "form": {
-      "name": "Dein Name",
-      "email": "Deine E-Mail",
-      "phone": "Deine Telefonnummer",
-      "message": "Deine Nachricht",
-      "submit": "Nachricht senden",
-      "success": "Vielen Dank! Deine Nachricht wurde gesendet.",
-      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
-    },
+    "emailCta": "E-Mail schreiben",
+    "callCta": "Anrufen",
+    "emailDescription": "Schreib uns eine Nachricht und wir melden uns schnellstmöglich.",
+    "callDescription": "Sprich direkt mit unserem Team.",
     "offices": {
       "germany": {
         "title": "Deutschland",
@@ -118,7 +165,7 @@
       "poland": {
         "title": "Polen",
         "company": "Isella Group Sp. z o.o.",
-        "address": "ul. Bandurskiego 22/4, 31-515 Kraków",
+        "address": "ul. Jana Kasprowicza 22/4, 31-515 Krak\u00f3w",
         "phone": "+48 506 057 041",
         "email": "info@isella-group.com"
       }
