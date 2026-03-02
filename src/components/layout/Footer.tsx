@@ -2,14 +2,14 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { Facebook, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Linkedin, MapPin, Phone, Mail, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const tContact = useTranslations('contact');
   const tCommon = useTranslations('common');
 
-  const socialLinks = [
+  const isellaGroupSocials = [
     {
       href: 'https://www.facebook.com/isella.group',
       label: 'Facebook',
@@ -20,14 +20,54 @@ export default function Footer() {
       label: 'LinkedIn',
       icon: Linkedin,
     },
+    {
+      href: 'https://www.instagram.com/isella.group',
+      label: 'Instagram',
+      icon: Instagram,
+    },
+    {
+      href: 'https://www.youtube.com/@isellagroup',
+      label: 'YouTube',
+      icon: Youtube,
+    },
+  ];
+
+  const berghausSocials = [
+    {
+      href: 'https://www.instagram.com/berghaus.house',
+      label: 'Instagram',
+      icon: Instagram,
+    },
+    {
+      href: 'https://www.youtube.com/@berghaus.house',
+      label: 'YouTube',
+      icon: Youtube,
+    },
+    {
+      href: 'https://www.linkedin.com/company/berghaus-house',
+      label: 'LinkedIn',
+      icon: Linkedin,
+    },
+    {
+      href: 'https://www.facebook.com/berghaus.house',
+      label: 'Facebook',
+      icon: Facebook,
+    },
+  ];
+
+  const brandLinks = [
+    { href: 'https://berghaus.house', label: 'berghaus.house' },
+    { href: 'https://tri2thrive.com', label: 'tri2thrive.com' },
+    { href: 'https://becz.eu', label: 'becz.eu' },
+    { href: 'https://dennis.cz', label: 'dennis.cz' },
   ];
 
   return (
     <footer className="bg-[#233e58] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-          {/* Left Column - Contact Us */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+          {/* Column 1 - Contact */}
           <div>
             <h3 className="text-xl font-bold text-isella-orange mb-6">
               {tCommon('contactUs')}
@@ -100,27 +140,72 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Right Column - Tagline + Social */}
-          <div className="flex flex-col justify-center">
+          {/* Column 2 - Social Media */}
+          <div>
+            <h3 className="text-xl font-bold text-isella-orange mb-6">Social Media</h3>
+
+            {/* Isella Group Socials */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-white mb-3">Isella Group</p>
+              <div className="flex items-center gap-3">
+                {isellaGroupSocials.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full bg-isella-orange flex items-center justify-center hover:bg-isella-orange-dark transition-colors"
+                    aria-label={`Isella Group ${social.label}`}
+                  >
+                    <social.icon className="w-4 h-4 text-white" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Berghaus Socials */}
+            <div>
+              <p className="text-sm font-semibold text-white mb-3">Berghaus</p>
+              <div className="flex items-center gap-3">
+                {berghausSocials.map((social) => (
+                  <a
+                    key={`berghaus-${social.label}`}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-isella-orange transition-colors"
+                    aria-label={`Berghaus ${social.label}`}
+                  >
+                    <social.icon className="w-4 h-4 text-white" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Column 3 - Brands + Tagline */}
+          <div className="flex flex-col">
             <h3 className="text-white text-3xl md:text-4xl font-light leading-snug mb-6">
               It&apos;s all about what we can do{' '}
               <span className="font-bold">together</span>
             </h3>
 
-            {/* Social Icons */}
-            <div className="flex items-center gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-isella-orange flex items-center justify-center hover:bg-isella-orange-dark transition-colors"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5 text-white" />
-                </a>
-              ))}
+            {/* Brand Links */}
+            <div className="mt-auto">
+              <p className="text-sm font-semibold text-white mb-3">Our Brands</p>
+              <div className="flex flex-wrap gap-3">
+                {brandLinks.map((brand) => (
+                  <a
+                    key={brand.label}
+                    href={brand.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/70 hover:text-isella-orange transition-colors"
+                  >
+                    {brand.label}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
