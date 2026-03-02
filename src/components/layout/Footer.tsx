@@ -66,15 +66,13 @@ export default function Footer() {
     <footer className="bg-[#233e58] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-          {/* Column 1 - Contact */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          {/* Column 1 - Germany Office */}
           <div>
-            <h3 className="text-xl font-bold text-isella-orange mb-6">
-              {tCommon('contactUs')}
+            <h3 className="text-sm font-bold text-isella-orange uppercase tracking-wide mb-4">
+              {tContact('offices.germany.title')}
             </h3>
-
-            {/* Germany Office */}
-            <address className="not-italic space-y-2 mb-6">
+            <address className="not-italic space-y-2">
               <p className="text-sm font-semibold text-white">
                 {tContact('offices.germany.company')}
               </p>
@@ -101,9 +99,14 @@ export default function Footer() {
                 </a>
               </div>
             </address>
+          </div>
 
-            {/* Poland Office */}
-            <address className="not-italic space-y-2 mb-8">
+          {/* Column 2 - Poland Office */}
+          <div>
+            <h3 className="text-sm font-bold text-isella-orange uppercase tracking-wide mb-4">
+              {tContact('offices.poland.title')}
+            </h3>
+            <address className="not-italic space-y-2">
               <p className="text-sm font-semibold text-white">
                 {tContact('offices.poland.company')}
               </p>
@@ -130,34 +133,28 @@ export default function Footer() {
                 </a>
               </div>
             </address>
-
-            {/* Contact Us Button */}
-            <Link
-              href="/kontakt"
-              className="inline-block bg-isella-orange text-white px-6 py-2.5 rounded text-sm font-semibold hover:bg-isella-orange-dark transition-colors"
-            >
-              {tCommon('contactUs')}
-            </Link>
           </div>
 
-          {/* Column 2 - Social Media */}
+          {/* Column 3 - Social Media */}
           <div>
-            <h3 className="text-xl font-bold text-isella-orange mb-6">Social Media</h3>
+            <h3 className="text-sm font-bold text-isella-orange uppercase tracking-wide mb-4">
+              Social Media
+            </h3>
 
             {/* Isella Group Socials */}
-            <div className="mb-6">
-              <p className="text-sm font-semibold text-white mb-3">Isella Group</p>
-              <div className="flex items-center gap-3">
+            <div className="mb-4">
+              <p className="text-sm font-semibold text-white mb-2">Isella Group</p>
+              <div className="flex items-center gap-2">
                 {isellaGroupSocials.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-full bg-isella-orange flex items-center justify-center hover:bg-isella-orange-dark transition-colors"
+                    className="w-8 h-8 rounded-full bg-isella-orange flex items-center justify-center hover:bg-isella-orange-dark transition-colors"
                     aria-label={`Isella Group ${social.label}`}
                   >
-                    <social.icon className="w-4 h-4 text-white" />
+                    <social.icon className="w-3.5 h-3.5 text-white" />
                   </a>
                 ))}
               </div>
@@ -165,48 +162,48 @@ export default function Footer() {
 
             {/* Berghaus Socials */}
             <div>
-              <p className="text-sm font-semibold text-white mb-3">Berghaus</p>
-              <div className="flex items-center gap-3">
+              <p className="text-sm font-semibold text-white mb-2">Berghaus</p>
+              <div className="flex items-center gap-2">
                 {berghausSocials.map((social) => (
                   <a
                     key={`berghaus-${social.label}`}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-isella-orange transition-colors"
+                    className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-isella-orange transition-colors"
                     aria-label={`Berghaus ${social.label}`}
                   >
-                    <social.icon className="w-4 h-4 text-white" />
+                    <social.icon className="w-3.5 h-3.5 text-white" />
                   </a>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Column 3 - Brands + Tagline */}
-          <div className="flex flex-col">
-            <h3 className="text-white text-3xl md:text-4xl font-light leading-snug mb-6">
-              It&apos;s all about what we can do{' '}
-              <span className="font-bold">together</span>
+          {/* Column 4 - Brands + CTA */}
+          <div>
+            <h3 className="text-sm font-bold text-isella-orange uppercase tracking-wide mb-4">
+              Our Brands
             </h3>
-
-            {/* Brand Links */}
-            <div className="mt-auto">
-              <p className="text-sm font-semibold text-white mb-3">Our Brands</p>
-              <div className="flex flex-wrap gap-3">
-                {brandLinks.map((brand) => (
-                  <a
-                    key={brand.label}
-                    href={brand.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-white/70 hover:text-isella-orange transition-colors"
-                  >
-                    {brand.label}
-                  </a>
-                ))}
-              </div>
+            <div className="space-y-1.5 mb-6">
+              {brandLinks.map((brand) => (
+                <a
+                  key={brand.label}
+                  href={brand.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-white/70 hover:text-isella-orange transition-colors"
+                >
+                  {brand.label}
+                </a>
+              ))}
             </div>
+            <Link
+              href="/kontakt"
+              className="inline-block bg-isella-orange text-white px-5 py-2 rounded text-sm font-semibold hover:bg-isella-orange-dark transition-colors"
+            >
+              {tCommon('contactUs')}
+            </Link>
           </div>
         </div>
       </div>
