@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "ourProjects": "Our Projects",
+    "career": "Career",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "We are Isella Group",
+      "subtitle": "Developing innovative business projects in international markets",
+      "cta": "Learn More"
+    },
+    "about": {
+      "title": "Who We Are",
+      "description": "Isella Group is an international agency that develops innovative business projects in international markets. Our team of specialists covers areas from marketing and sales to project management and construction work.",
+      "highlight": "Innovation, creativity, and teamwork drive everything we do."
+    },
+    "values": {
+      "title": "What Drives Us",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We adapt to new market trends and develop cutting-edge solutions."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "Our multicultural team brings diverse perspectives to every project."
+      },
+      "experience": {
+        "title": "Experience",
+        "description": "Years of expertise across multiple industries and international markets."
+      },
+      "creativity": {
+        "title": "Creativity",
+        "description": "We think outside the box to deliver unique solutions for our clients."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Get in touch with us and let's build something great together.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our Story",
+    "story": "Isella Group was established in 2020 by Dennis Czekalla. We focus on developing innovative business ventures, starting with our flagship project Berghaus \u2013 Tiny House. Since then, we have rapidly expanded, building dedicated production and sales operations while gaining the trust of individual customers and business partners alike.",
+    "team": {
+      "title": "Our Team",
+      "description": "Our workforce comprises ambitious, creative professionals characterized by significant cultural and linguistic diversity. Team members bring varied expertise across multiple disciplines, including marketing, sales, project management, administrative roles, architecture, and construction."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We are an agency committed to helping clients expand their business internationally through our established network and multinational environment."
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Discover Our Ventures",
+    "berghaus": {
+      "title": "Berghaus \u2013 Tiny House",
+      "description": "Our flagship project: mobile wooden dwellings built from high-quality natural materials with emphasis on sustainability. Customizable to individual specifications and manufactured in-house since 2022.",
+      "cta": "Visit Berghaus"
+    }
+  },
+  "career": {
+    "title": "Career",
+    "subtitle": "Join Isella Group!",
+    "description": "We are a young, rapidly growing company made up of creative and ambitious people. We are looking for candidates for both office and construction positions.",
+    "cta": "We are open to new people who, with their interesting ideas and commitment, will contribute to the success of our projects.",
+    "apply": "Apply Now",
+    "positions": {
+      "title": "Open Positions",
+      "description": "Send us your application and tell us about yourself."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Happy to answer all your questions",
+    "description": "Don't miss the opportunity, contact Isella Group. We will listen to your needs and formulate the appropriate offer.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Something went wrong. Please try again."
+    },
+    "offices": {
+      "germany": {
+        "title": "Germany",
+        "company": "Isella Deutschland GmbH",
+        "address": "Beethovenstr. 9, 58566 Kierspe",
+        "phone": "+49 2359 809 285 5",
+        "email": "info@isella-group.com"
+      },
+      "poland": {
+        "title": "Poland",
+        "company": "Isella Group Sp. z o.o.",
+        "address": "ul. Bandurskiego 22/4, 31-515 Krak\u00f3w",
+        "phone": "+48 506 057 041",
+        "email": "info@isella-group.com"
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "impressum": "Impressum"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "readMore": "Read More"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Strona g\u0142\u00f3wna",
+    "aboutUs": "O nas",
+    "ourProjects": "Nasze projekty",
+    "career": "Kariera",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "Jeste\u015bmy Isella Group",
+      "subtitle": "Rozwijamy innowacyjne projekty biznesowe na rynkach mi\u0119dzynarodowych",
+      "cta": "Dowiedz si\u0119 wi\u0119cej"
+    },
+    "about": {
+      "title": "Kim jeste\u015bmy",
+      "description": "Isella Group to mi\u0119dzynarodowa agencja rozwijaj\u0105ca innowacyjne projekty biznesowe na rynkach mi\u0119dzynarodowych. Nasz zesp\u00f3\u0142 specjalist\u00f3w obejmuje obszary od marketingu i sprzeda\u017cy po zarz\u0105dzanie projektami i prace budowlane.",
+      "highlight": "Innowacja, kreatywno\u015b\u0107 i praca zespo\u0142owa nap\u0119dzaj\u0105 wszystko, co robimy."
+    },
+    "values": {
+      "title": "Co nas nap\u0119dza",
+      "innovation": {
+        "title": "Innowacja",
+        "description": "Dostosowujemy si\u0119 do nowych trend\u00f3w rynkowych i tworzymy nowoczesne rozwi\u0105zania."
+      },
+      "teamwork": {
+        "title": "Praca zespo\u0142owa",
+        "description": "Nasz wielokulturowy zesp\u00f3\u0142 wnosi r\u00f3\u017cnorodne perspektywy do ka\u017cdego projektu."
+      },
+      "experience": {
+        "title": "Do\u015bwiadczenie",
+        "description": "Lata wiedzy w wielu bran\u017cach i na mi\u0119dzynarodowych rynkach."
+      },
+      "creativity": {
+        "title": "Kreatywno\u015b\u0107",
+        "description": "My\u015blimy nieszablonowo, aby dostarczy\u0107 unikalne rozwi\u0105zania dla naszych klient\u00f3w."
+      }
+    },
+    "cta": {
+      "title": "Gotowy, aby rozpocz\u0105\u0107 sw\u00f3j projekt?",
+      "description": "Skontaktuj si\u0119 z nami i zbudujmy razem co\u015b wspania\u0142ego.",
+      "button": "Skontaktuj si\u0119"
+    }
+  },
+  "about": {
+    "title": "O nas",
+    "subtitle": "Nasza historia",
+    "story": "Isella Group zosta\u0142a za\u0142o\u017cona w 2020 roku przez Dennisa Czekall\u0119. Koncentrujemy si\u0119 na rozwijaniu innowacyjnych przedsi\u0119wzi\u0119\u0107 biznesowych, pocz\u0105wszy od naszego flagowego projektu Berghaus \u2013 Tiny House. Od tego czasu dynamicznie si\u0119 rozwijamy, buduj\u0105c w\u0142asne struktury produkcji i sprzeda\u017cy, zdobywaj\u0105c zaufanie klient\u00f3w indywidualnych i partner\u00f3w biznesowych.",
+    "team": {
+      "title": "Nasz zesp\u00f3\u0142",
+      "description": "Nasz zesp\u00f3\u0142 sk\u0142ada si\u0119 z ambitnych, kreatywnych profesjonalist\u00f3w cechuj\u0105cych si\u0119 du\u017c\u0105 r\u00f3\u017cnorodno\u015bci\u0105 kulturaln\u0105 i j\u0119zykow\u0105. Cz\u0142onkowie zespo\u0142u wnosz\u0105 r\u00f3\u017cnorodn\u0105 wiedz\u0119 z wielu dziedzin, w tym marketingu, sprzeda\u017cy, zarz\u0105dzania projektami, administracji, architektury i budownictwa."
+    },
+    "mission": {
+      "title": "Nasza misja",
+      "description": "Jeste\u015bmy agencj\u0105 zaanga\u017cowan\u0105 w pomoc klientom w mi\u0119dzynarodowej ekspansji ich biznesu poprzez nasz\u0105 ustalon\u0105 sie\u0107 kontakt\u00f3w i wielonarodowe \u015brodowisko."
+    }
+  },
+  "projects": {
+    "title": "Nasze projekty",
+    "subtitle": "Odkryj nasze przedsi\u0119wzi\u0119cia",
+    "berghaus": {
+      "title": "Berghaus \u2013 Tiny House",
+      "description": "Nasz flagowy projekt: mobilne drewniane domy z wysokiej jako\u015bci naturalnych materia\u0142\u00f3w z naciskiem na zr\u00f3wnowa\u017cony rozw\u00f3j. Konfigurowalne wed\u0142ug indywidualnych specyfikacji i produkowane we w\u0142asnym zak\u0142adzie od 2022 roku.",
+      "cta": "Odwied\u017a Berghaus"
+    }
+  },
+  "career": {
+    "title": "Kariera",
+    "subtitle": "Do\u0142\u0105cz do Isella Group!",
+    "description": "Jeste\u015bmy m\u0142od\u0105, dynamicznie rozwijaj\u0105c\u0105 si\u0119 firm\u0105 z\u0142o\u017con\u0105 z kreatywnych i ambitnych ludzi. Poszukujemy kandydat\u00f3w zar\u00f3wno na stanowiska biurowe, jak i budowlane.",
+    "cta": "Jeste\u015bmy otwarci na nowych ludzi, kt\u00f3rzy swoimi ciekawymi pomys\u0142ami i zaanga\u017cowaniem przyczyni\u0105 si\u0119 do sukcesu naszych projekt\u00f3w.",
+    "apply": "Aplikuj teraz",
+    "positions": {
+      "title": "Otwarte stanowiska",
+      "description": "Wy\u015blij nam swoj\u0105 aplikacj\u0119 i opowiedz o sobie."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Ch\u0119tnie odpowiemy na wszystkie pytania",
+    "description": "Nie przegap okazji, skontaktuj si\u0119 z Isella Group. Wys\u0142uchamy Twoich potrzeb i przygotujemy odpowiedni\u0105 ofert\u0119.",
+    "form": {
+      "name": "Twoje imi\u0119",
+      "email": "Tw\u00f3j e-mail",
+      "phone": "Tw\u00f3j telefon",
+      "message": "Twoja wiadomo\u015b\u0107",
+      "submit": "Wy\u015blij wiadomo\u015b\u0107",
+      "success": "Dzi\u0119kujemy! Twoja wiadomo\u015b\u0107 zosta\u0142a wys\u0142ana.",
+      "error": "Co\u015b posz\u0142o nie tak. Spr\u00f3buj ponownie."
+    },
+    "offices": {
+      "germany": {
+        "title": "Niemcy",
+        "company": "Isella Deutschland GmbH",
+        "address": "Beethovenstr. 9, 58566 Kierspe",
+        "phone": "+49 2359 809 285 5",
+        "email": "info@isella-group.com"
+      },
+      "poland": {
+        "title": "Polska",
+        "company": "Isella Group Sp. z o.o.",
+        "address": "ul. Bandurskiego 22/4, 31-515 Krak\u00f3w",
+        "phone": "+48 506 057 041",
+        "email": "info@isella-group.com"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrze\u017cone.",
+    "privacy": "Polityka prywatno\u015bci",
+    "impressum": "Impressum"
+  },
+  "common": {
+    "learnMore": "Dowiedz si\u0119 wi\u0119cej",
+    "contactUs": "Skontaktuj si\u0119",
+    "readMore": "Czytaj dalej"
+  }
+}
