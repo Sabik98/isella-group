@@ -1,10 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { useState, useEffect, useCallback } from 'react';
-import { Facebook, Linkedin, MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
 
 const CAROUSEL_IMAGES = [
   '/images/hero-2.jpg',
@@ -218,146 +216,6 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* ---- Section 5: Contact / CTA Section ---- */}
-      <section className="bg-[#233e58]">
-        <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
-          {/* Left: Contact details with both offices */}
-          <div className="px-8 py-16 md:px-12 lg:px-16 lg:py-24">
-            <h2 className="text-3xl font-bold text-isella-orange md:text-4xl">
-              {t('contact.title')}
-            </h2>
-
-            <p className="mt-4 text-white/70">
-              {t('contact.subtitle')}
-            </p>
-
-            {/* Germany Office */}
-            <div className="mt-10">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-isella-orange">
-                {t('contact.offices.germany.title')}
-              </h3>
-              <address className="mt-3 not-italic space-y-2">
-                <p className="font-medium text-white">
-                  {t('contact.offices.germany.company')}
-                </p>
-                <div className="flex items-start gap-2 text-sm text-white/70">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-isella-orange" />
-                  <span>{t('contact.offices.germany.address')}</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-white/70">
-                  <Phone className="h-4 w-4 shrink-0 text-isella-orange" />
-                  <a
-                    href={`tel:${t('contact.offices.germany.phone').replace(/\s/g, '')}`}
-                    className="transition-colors hover:text-isella-orange"
-                  >
-                    {t('contact.offices.germany.phone')}
-                  </a>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-white/70">
-                  <Mail className="h-4 w-4 shrink-0 text-isella-orange" />
-                  <a
-                    href={`mailto:${t('contact.offices.germany.email')}`}
-                    className="transition-colors hover:text-isella-orange"
-                  >
-                    {t('contact.offices.germany.email')}
-                  </a>
-                </div>
-              </address>
-            </div>
-
-            {/* Poland Office */}
-            <div className="mt-8">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-isella-orange">
-                {t('contact.offices.poland.title')}
-              </h3>
-              <address className="mt-3 not-italic space-y-2">
-                <p className="font-medium text-white">
-                  {t('contact.offices.poland.company')}
-                </p>
-                <div className="flex items-start gap-2 text-sm text-white/70">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-isella-orange" />
-                  <span>{t('contact.offices.poland.address')}</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-white/70">
-                  <Phone className="h-4 w-4 shrink-0 text-isella-orange" />
-                  <a
-                    href={`tel:${t('contact.offices.poland.phone').replace(/\s/g, '')}`}
-                    className="transition-colors hover:text-isella-orange"
-                  >
-                    {t('contact.offices.poland.phone')}
-                  </a>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-white/70">
-                  <Mail className="h-4 w-4 shrink-0 text-isella-orange" />
-                  <a
-                    href={`mailto:${t('contact.offices.poland.email')}`}
-                    className="transition-colors hover:text-isella-orange"
-                  >
-                    {t('contact.offices.poland.email')}
-                  </a>
-                </div>
-              </address>
-            </div>
-
-            {/* Contact button */}
-            <div className="mt-10">
-              <Link
-                href="/kontakt"
-                className="inline-flex items-center gap-2 rounded-sm bg-isella-orange px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-isella-orange-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-isella-orange focus-visible:ring-offset-2 focus-visible:ring-offset-isella-blue"
-              >
-                {t('home.contactSection.button')}
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Right: Motivational text and social links */}
-          <div className="relative flex flex-col justify-center bg-[#1a2f43] px-8 py-16 md:px-12 lg:px-16 lg:py-24">
-            {/* Decorative geometric element */}
-            <div className="absolute right-8 top-8 hidden lg:block" aria-hidden="true">
-              <Image
-                src="/images/geometric-shape.png"
-                alt=""
-                width={120}
-                height={120}
-                className="opacity-15"
-              />
-            </div>
-
-            <div className="relative z-10">
-              <h2 className="text-2xl font-bold leading-snug text-white md:text-3xl lg:text-4xl">
-                {t('home.contactSection.heading')}
-              </h2>
-
-              <p className="mt-6 text-white/60">
-                {t('home.contactSection.subheading')}
-              </p>
-
-              {/* Social links */}
-              <div className="mt-8 flex items-center gap-4">
-                <a
-                  href="https://www.facebook.com/isella.group"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-isella-orange"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/isella-group"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-isella-orange"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
