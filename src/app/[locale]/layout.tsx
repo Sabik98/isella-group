@@ -52,6 +52,9 @@ export async function generateMetadata({
         pl: '/pl',
       },
     },
+    icons: {
+      icon: '/favicon.ico',
+    },
     openGraph: {
       title: titles[locale] || titles.de,
       description: descriptions[locale] || descriptions.de,
