@@ -14,8 +14,27 @@
     },
     "about": {
       "title": "Who We Are",
-      "description": "Isella Group is an international agency that develops innovative business projects in international markets. Our team of specialists covers areas from marketing and sales to project management and construction work.",
-      "highlight": "Innovation, creativity, and teamwork drive everything we do."
+      "description": "We develop {innovative} in international markets. Our team of {specialists} covers areas from marketing and sales to project management and construction work. Our goal is to create {products} that will change the world.",
+      "descriptionPlain": "We develop innovative business projects in international markets. Our team of specialists covers areas from marketing and sales to project management and construction work. Our goal is to create innovative products that will change the world.",
+      "highlight": "Innovation, creativity, and teamwork drive everything we do.",
+      "bold1": "innovative business projects",
+      "bold2": "specialists",
+      "bold3": "innovative products"
+    },
+    "teamwork": {
+      "description": "We are a team of {bold} who are characterized by teamwork, creativity, and experience. We work together for the success of Isella Group!",
+      "descriptionPlain": "We are a team of ambitious people who are characterized by teamwork, creativity, and experience. We work together for the success of Isella Group!",
+      "bold": "ambitious people",
+      "closing": "We work together for the success of Isella Group!"
+    },
+    "innovation": {
+      "description": "Innovation, digitalization, and globalization are key features of our projects. Innovative products, digital sales channels, and an international team are the foundation of our companies.",
+      "closing": "Our projects are a response to the changing environment and growing customer requirements."
+    },
+    "contactSection": {
+      "heading": "It's all about what we can do together.",
+      "subheading": "Follow our social media to stay updated.",
+      "button": "Contact Us"
     },
     "values": {
       "title": "What Drives Us",

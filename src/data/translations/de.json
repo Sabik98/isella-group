@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "aboutUs": "\u00dcber uns",
+    "aboutUs": "Über uns",
     "ourProjects": "Unsere Projekte",
     "career": "Karriere",
     "contact": "Kontakt"
@@ -9,76 +9,95 @@
   "home": {
     "hero": {
       "title": "Wir sind Isella Group",
-      "subtitle": "Entwicklung innovativer Gesch\u00e4ftsprojekte auf internationalen M\u00e4rkten",
+      "subtitle": "Entwicklung innovativer Geschäftsprojekte auf internationalen Märkten",
       "cta": "Mehr erfahren"
     },
     "about": {
       "title": "Wer wir sind",
-      "description": "Isella Group ist eine internationale Agentur, die innovative Gesch\u00e4ftsprojekte auf internationalen M\u00e4rkten entwickelt. Unser Team von Spezialisten deckt Bereiche von Marketing und Vertrieb bis hin zu Projektmanagement und Bauarbeiten ab.",
-      "highlight": "Innovation, Kreativit\u00e4t und Teamarbeit treiben alles an, was wir tun."
+      "description": "Wir entwickeln {innovative} auf internationalen Märkten. Unser Team von {specialists} deckt Bereiche von Marketing und Vertrieb bis hin zu Projektmanagement und Bauarbeiten ab. Unser Ziel ist es, {products} zu schaffen, die die Welt verändern.",
+      "descriptionPlain": "Wir entwickeln innovative Geschäftsprojekte auf internationalen Märkten. Unser Team von Spezialisten deckt Bereiche von Marketing und Vertrieb bis hin zu Projektmanagement und Bauarbeiten ab. Unser Ziel ist es, innovative Produkte zu schaffen, die die Welt verändern.",
+      "highlight": "Innovation, Kreativität und Teamarbeit treiben alles an, was wir tun.",
+      "bold1": "innovative Geschäftsprojekte",
+      "bold2": "Spezialisten",
+      "bold3": "innovative Produkte"
     },
     "values": {
       "title": "Was uns antreibt",
       "innovation": {
         "title": "Innovation",
-        "description": "Wir passen uns an neue Markttrends an und entwickeln zukunftsweisende L\u00f6sungen."
+        "description": "Wir passen uns an neue Markttrends an und entwickeln zukunftsweisende Lösungen."
       },
       "teamwork": {
         "title": "Teamarbeit",
-        "description": "Unser multikulturelles Team bringt vielf\u00e4ltige Perspektiven in jedes Projekt ein."
+        "description": "Unser multikulturelles Team bringt vielfältige Perspektiven in jedes Projekt ein."
       },
       "experience": {
         "title": "Erfahrung",
-        "description": "Jahrelange Expertise in mehreren Branchen und auf internationalen M\u00e4rkten."
+        "description": "Jahrelange Expertise in mehreren Branchen und auf internationalen Märkten."
       },
       "creativity": {
-        "title": "Kreativit\u00e4t",
-        "description": "Wir denken \u00fcber den Tellerrand hinaus, um einzigartige L\u00f6sungen f\u00fcr unsere Kunden zu liefern."
+        "title": "Kreativität",
+        "description": "Wir denken über den Tellerrand hinaus, um einzigartige Lösungen für unsere Kunden zu liefern."
       }
     },
     "cta": {
       "title": "Bereit, dein Projekt zu starten?",
-      "description": "Nimm Kontakt mit uns auf und lass uns gemeinsam etwas Gro\u00dfartiges aufbauen.",
+      "description": "Nimm Kontakt mit uns auf und lass uns gemeinsam etwas Großartiges aufbauen.",
+      "button": "Kontaktiere uns"
+    },
+    "teamwork": {
+      "description": "Wir sind ein Team von {bold}, die sich durch Teamarbeit, Kreativität und Erfahrung auszeichnen. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
+      "descriptionPlain": "Wir sind ein Team von ambitionierten Menschen, die sich durch Teamarbeit, Kreativität und Erfahrung auszeichnen. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
+      "bold": "ambitionierten Menschen",
+      "closing": "Wir arbeiten gemeinsam für den Erfolg der Isella Group!"
+    },
+    "innovation": {
+      "description": "Innovation, Digitalisierung und Globalisierung sind Schlüsselmerkmale unserer Projekte. Innovative Produkte, digitale Vertriebskanäle und ein internationales Team bilden das Fundament unserer Unternehmen.",
+      "closing": "Unsere Projekte sind eine Antwort auf das sich verändernde Umfeld und die wachsenden Kundenanforderungen."
+    },
+    "contactSection": {
+      "heading": "Es geht darum, was wir gemeinsam erreichen können.",
+      "subheading": "Folge unseren sozialen Medien, um auf dem Laufenden zu bleiben.",
       "button": "Kontaktiere uns"
     }
   },
   "about": {
-    "title": "\u00dcber uns",
+    "title": "Über uns",
     "subtitle": "Unsere Geschichte",
-    "story": "Die Isella Group wurde 2020 von Dennis Czekalla gegr\u00fcndet. Wir konzentrieren uns auf die Entwicklung innovativer Gesch\u00e4ftsvorhaben, angefangen mit unserem Flaggschiffprojekt Berghaus \u2013 Tiny House. Seitdem haben wir uns rasant weiterentwickelt, eigene Produktions- und Vertriebsstrukturen aufgebaut und das Vertrauen von Privatkunden und Gesch\u00e4ftspartnern gleicherma\u00dfen gewonnen.",
+    "story": "Die Isella Group wurde 2020 von Dennis Czekalla gegründet. Wir konzentrieren uns auf die Entwicklung innovativer Geschäftsvorhaben, angefangen mit unserem Flaggschiffprojekt Berghaus – Tiny House. Seitdem haben wir uns rasant weiterentwickelt, eigene Produktions- und Vertriebsstrukturen aufgebaut und das Vertrauen von Privatkunden und Geschäftspartnern gleichermaßen gewonnen.",
     "team": {
       "title": "Unser Team",
-      "description": "Unsere Belegschaft besteht aus ambitionierten, kreativen Fachkr\u00e4ften, die sich durch gro\u00dfe kulturelle und sprachliche Vielfalt auszeichnen. Die Teammitglieder bringen vielf\u00e4ltige Expertise in verschiedenen Disziplinen mit, darunter Marketing, Vertrieb, Projektmanagement, Verwaltung, Architektur und Bauwesen."
+      "description": "Unsere Belegschaft besteht aus ambitionierten, kreativen Fachkräften, die sich durch große kulturelle und sprachliche Vielfalt auszeichnen. Die Teammitglieder bringen vielfältige Expertise in verschiedenen Disziplinen mit, darunter Marketing, Vertrieb, Projektmanagement, Verwaltung, Architektur und Bauwesen."
     },
     "mission": {
       "title": "Unsere Mission",
-      "description": "Wir sind eine Agentur, die sich daf\u00fcr einsetzt, Kunden bei der internationalen Expansion ihres Gesch\u00e4fts durch unser etabliertes Netzwerk und multinationales Umfeld zu unterst\u00fctzen."
+      "description": "Wir sind eine Agentur, die sich dafür einsetzt, Kunden bei der internationalen Expansion ihres Geschäfts durch unser etabliertes Netzwerk und multinationales Umfeld zu unterstützen."
     }
   },
   "projects": {
     "title": "Unsere Projekte",
     "subtitle": "Entdecke unsere Vorhaben",
     "berghaus": {
-      "title": "Berghaus \u2013 Tiny House",
-      "description": "Unser Flaggschiffprojekt: mobile Holzh\u00e4user aus hochwertigen Naturmaterialien mit Schwerpunkt auf Nachhaltigkeit. Individuell konfigurierbar und seit 2022 in eigener Produktion gefertigt.",
+      "title": "Berghaus – Tiny House",
+      "description": "Unser Flaggschiffprojekt: mobile Holzhäuser aus hochwertigen Naturmaterialien mit Schwerpunkt auf Nachhaltigkeit. Individuell konfigurierbar und seit 2022 in eigener Produktion gefertigt.",
       "cta": "Berghaus besuchen"
     }
   },
   "career": {
     "title": "Karriere",
     "subtitle": "Werde Teil der Isella Group!",
-    "description": "Wir sind ein junges, schnell wachsendes Unternehmen aus kreativen und ambitionierten Menschen. Wir suchen Kandidaten sowohl f\u00fcr B\u00fcro- als auch f\u00fcr Baupositionen.",
-    "cta": "Wir sind offen f\u00fcr neue Menschen, die mit ihren interessanten Ideen und ihrem Engagement zum Erfolg unserer Projekte beitragen.",
+    "description": "Wir sind ein junges, schnell wachsendes Unternehmen aus kreativen und ambitionierten Menschen. Wir suchen Kandidaten sowohl für Büro- als auch für Baupositionen.",
+    "cta": "Wir sind offen für neue Menschen, die mit ihren interessanten Ideen und ihrem Engagement zum Erfolg unserer Projekte beitragen.",
     "apply": "Jetzt bewerben",
     "positions": {
       "title": "Offene Stellen",
-      "description": "Schick uns deine Bewerbung und erz\u00e4hl uns von dir."
+      "description": "Schick uns deine Bewerbung und erzähl uns von dir."
     }
   },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Wir beantworten gerne alle deine Fragen",
-    "description": "Verpasse nicht die Gelegenheit, kontaktiere Isella Group. Wir h\u00f6ren dir zu und erstellen das passende Angebot.",
+    "description": "Verpasse nicht die Gelegenheit, kontaktiere Isella Group. Wir hören dir zu und erstellen das passende Angebot.",
     "form": {
       "name": "Dein Name",
       "email": "Deine E-Mail",
@@ -99,7 +118,7 @@
       "poland": {
         "title": "Polen",
         "company": "Isella Group Sp. z o.o.",
-        "address": "ul. Bandurskiego 22/4, 31-515 Krak\u00f3w",
+        "address": "ul. Bandurskiego 22/4, 31-515 Kraków",
         "phone": "+48 506 057 041",
         "email": "info@isella-group.com"
       }
