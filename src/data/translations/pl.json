@@ -14,12 +14,12 @@
     },
     "about": {
       "title": "Kim jeste\u015bmy",
-      "description": "Rozwijamy {innovative} — od dom\u00f3w modu\u0142owych i tiny houses po doradztwo i zarz\u0105dzanie markami. Nasz zesp\u00f3\u0142 {specialists} obejmuje architektur\u0119, produkcj\u0119, sprzeda\u017c i mi\u0119dzynarodowe zarz\u0105dzanie projektami. Naszym celem jest dostarczanie {products}, kt\u00f3re wyznaczaj\u0105 nowe standardy w zr\u00f3wnowa\u017conym budownictwie.",
-      "descriptionPlain": "Rozwijamy innowacyjne projekty nieruchomo\u015bciowe i markowe — od dom\u00f3w modu\u0142owych i tiny houses po doradztwo i zarz\u0105dzanie markami. Nasz zesp\u00f3\u0142 specjalist\u00f3w obejmuje architektur\u0119, produkcj\u0119, sprzeda\u017c i mi\u0119dzynarodowe zarz\u0105dzanie projektami. Naszym celem jest dostarczanie wysokiej jako\u015bci, zr\u00f3wnowa\u017conych produkt\u00f3w, kt\u00f3re wyznaczaj\u0105 nowe standardy w zr\u00f3wnowa\u017conym budownictwie.",
-      "highlight": "Domy modu\u0142owe, tiny houses i zr\u00f3wnowa\u017cone marki — budowane przez zesp\u00f3\u0142, kt\u00f3ry my\u015bli globalnie.",
-      "bold1": "innowacyjne projekty nieruchomo\u015bciowe i markowe",
-      "bold2": "specjalist\u00f3w",
-      "bold3": "wysokiej jako\u015bci, zr\u00f3wnowa\u017conych produkt\u00f3w"
+      "description": "To, co w 2020 roku zaczęło się jako odważny pomysł, rozrosło się w grupę firm, która {bold1}. Od własnego zakładu produkcyjnego w Niemczech po struktury sprzedaży w całej Europie, zamieniamy surowce w {bold2}, a pomysły w {bold3}. Przy każdym projekcie zadajemy sobie jedno pytanie: jak możemy to zrobić lepiej?",
+      "descriptionPlain": "To, co w 2020 roku zaczęło się jako odważny pomysł, rozrosło się w grupę firm, która buduje domy, marki i przyszłość. Od własnego zakładu produkcyjnego w Niemczech po struktury sprzedaży w całej Europie, zamieniamy surowce w przestrzenie do życia, a pomysły w prężne biznesy. Przy każdym projekcie zadajemy sobie jedno pytanie: jak możemy to zrobić lepiej?",
+      "highlight": "Domy modułowe, tiny houses i zrównoważone marki — budowane przez zespół, który myśli globalnie.",
+      "bold1": "buduje domy, marki i przyszłość",
+      "bold2": "przestrzenie do życia",
+      "bold3": "prężne biznesy"
     },
     "values": {
       "title": "Co nas nap\u0119dza",
@@ -46,14 +46,14 @@
       "button": "Skontaktuj si\u0119"
     },
     "teamwork": {
-      "description": "Jeste\u015bmy zespo\u0142em {bold} — architekt\u00f3w, budowniczych, marketer\u00f3w i kierownik\u00f3w projekt\u00f3w pracuj\u0105cych w Niemczech, Polsce i nie tylko. Wsp\u00f3\u0142pracujemy na rzecz sukcesu Isella Group!",
-      "descriptionPlain": "Jeste\u015bmy zespo\u0142em ambitnych profesjonalist\u00f3w — architekt\u00f3w, budowniczych, marketer\u00f3w i kierownik\u00f3w projekt\u00f3w pracuj\u0105cych w Niemczech, Polsce i nie tylko. Wsp\u00f3\u0142pracujemy na rzecz sukcesu Isella Group!",
-      "bold": "ambitnych profesjonalist\u00f3w",
-      "closing": "Wsp\u00f3\u0142pracujemy na rzecz sukcesu Isella Group!"
+      "description": "Za każdym domem, który budujemy, i każdą marką, którą tworzymy, stoją {bold} — rysujący plany o północy, testujący materiały ręcznie, zamykający transakcje w trzech językach. Mamy siedzibę w Niemczech i Polsce, ale nasze myślenie nie zna granic. Różne pochodzenie, jedna misja.",
+      "descriptionPlain": "Za każdym domem, który budujemy, i każdą marką, którą tworzymy, stoją prawdziwi ludzie — rysujący plany o północy, testujący materiały ręcznie, zamykający transakcje w trzech językach. Mamy siedzibę w Niemczech i Polsce, ale nasze myślenie nie zna granic. Różne pochodzenie, jedna misja.",
+      "bold": "prawdziwi ludzie",
+      "closing": "Różne pochodzenie, jedna misja."
     },
     "innovation": {
-      "description": "Nasz flagowy projekt Berghaus produkuje domy modu\u0142owe i tiny houses w naszym w\u0142asnym zak\u0142adzie w Kierspe, Niemcy. Dzi\u0119ki cyfrowym kana\u0142om sprzeda\u017cy i mi\u0119dzynarodowemu zespo\u0142owi w trzech krajach dostarczamy zr\u00f3wnowa\u017cone rozwi\u0105zania mieszkaniowe klientom w ca\u0142ej Europie.",
-      "closing": "Od produkcji po dostaw\u0119 — kontrolujemy ca\u0142y proces, aby zapewni\u0107 najwy\u017csz\u0105 jako\u015b\u0107."
+      "description": "W naszej hali produkcyjnej w Kierspe surowe drewno zamienia się w czyjś przyszły dom. Berghaus — nasz flagowy projekt — projektuje, buduje i dostarcza domy modułowe i tiny houses, które dowodzą, że zrównoważone życie nie oznacza kompromisów. Każda jednostka jest konfigurowana na zamówienie, wykonywana ręcznie i dostarczana w całej Europie.",
+      "closing": "Nie zlecamy jakości na zewnątrz. Odpowiadamy za każdy krok — od pierwszego cięcia po klucz do drzwi."
     },
     "contactSection": {
       "heading": "Chodzi o to, co mo\u017cemy osi\u0105gn\u0105\u0107 razem.",

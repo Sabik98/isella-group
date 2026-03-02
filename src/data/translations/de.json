@@ -14,12 +14,12 @@
     },
     "about": {
       "title": "Wer wir sind",
-      "description": "Wir entwickeln {innovative} — von Modulhäusern und Tiny Houses bis hin zu Beratung und Markenmanagement. Unser Team von {specialists} deckt Architektur, Produktion, Vertrieb und internationales Projektmanagement ab. Unser Ziel ist es, {products} zu liefern, die neue Maßstäbe im nachhaltigen Wohnen setzen.",
-      "descriptionPlain": "Wir entwickeln innovative Immobilien- und Markenprojekte — von Modulhäusern und Tiny Houses bis hin zu Beratung und Markenmanagement. Unser Team von Spezialisten deckt Architektur, Produktion, Vertrieb und internationales Projektmanagement ab. Unser Ziel ist es, hochwertige, nachhaltige Produkte zu liefern, die neue Maßstäbe im nachhaltigen Wohnen setzen.",
+      "description": "Was 2020 als mutige Idee begann, ist zu einer Unternehmensgruppe gewachsen, die {bold1}. Von unserer eigenen Produktionsstätte in Deutschland bis zu Vertriebsstrukturen in ganz Europa verwandeln wir Rohstoffe in {bold2} und Ideen in {bold3}. Bei jedem Projekt stellen wir uns eine Frage: Wie können wir das besser machen?",
+      "descriptionPlain": "Was 2020 als mutige Idee begann, ist zu einer Unternehmensgruppe gewachsen, die Häuser, Marken und Zukunft baut. Von unserer eigenen Produktionsstätte in Deutschland bis zu Vertriebsstrukturen in ganz Europa verwandeln wir Rohstoffe in Lebensräume und Ideen in erfolgreiche Unternehmen. Bei jedem Projekt stellen wir uns eine Frage: Wie können wir das besser machen?",
       "highlight": "Modulhäuser, Tiny Houses und nachhaltige Marken — gebaut von einem Team, das global denkt.",
-      "bold1": "innovative Immobilien- und Markenprojekte",
-      "bold2": "Spezialisten",
-      "bold3": "hochwertige, nachhaltige Produkte"
+      "bold1": "Häuser, Marken und Zukunft baut",
+      "bold2": "Lebensräume",
+      "bold3": "erfolgreiche Unternehmen"
     },
     "values": {
       "title": "Was uns antreibt",
@@ -46,14 +46,14 @@
       "button": "Kontaktiere uns"
     },
     "teamwork": {
-      "description": "Wir sind ein Team von {bold} — Architekten, Bauarbeiter, Marketingspezialisten und Projektmanager, die in Deutschland, Polen und darüber hinaus arbeiten. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
-      "descriptionPlain": "Wir sind ein Team von ambitionierten Profis — Architekten, Bauarbeiter, Marketingspezialisten und Projektmanager, die in Deutschland, Polen und darüber hinaus arbeiten. Wir arbeiten gemeinsam für den Erfolg der Isella Group!",
-      "bold": "ambitionierten Profis",
-      "closing": "Wir arbeiten gemeinsam für den Erfolg der Isella Group!"
+      "description": "Hinter jedem Haus, das wir bauen, und jeder Marke, die wir aufbauen, stehen {bold} — die um Mitternacht Baupläne zeichnen, Materialien von Hand prüfen und Verträge in drei Sprachen abschließen. Wir sitzen in Deutschland und Polen, aber unser Denken kennt keine Grenzen. Verschiedene Hintergründe, eine Mission.",
+      "descriptionPlain": "Hinter jedem Haus, das wir bauen, und jeder Marke, die wir aufbauen, stehen echte Menschen — die um Mitternacht Baupläne zeichnen, Materialien von Hand prüfen und Verträge in drei Sprachen abschließen. Wir sitzen in Deutschland und Polen, aber unser Denken kennt keine Grenzen. Verschiedene Hintergründe, eine Mission.",
+      "bold": "echte Menschen",
+      "closing": "Verschiedene Hintergründe, eine Mission."
     },
     "innovation": {
-      "description": "Unser Flaggschiffprojekt Berghaus produziert Modulhäuser und Tiny Houses in unserer eigenen Fertigung in Kierspe, Deutschland. Mit digitalen Vertriebskanälen und einem internationalen Team in drei Ländern bringen wir nachhaltige Wohnlösungen zu Kunden in ganz Europa.",
-      "closing": "Von der Produktion bis zur Lieferung — wir kontrollieren den gesamten Prozess, um höchste Qualität zu gewährleisten."
+      "description": "In unserer Produktionshalle in Kierspe wird aus rohem Holz das zukünftige Zuhause von jemandem. Berghaus — unser Flaggschiff — entwirft, baut und liefert Modulhäuser und Tiny Houses, die beweisen, dass nachhaltiges Wohnen keinen Kompromiss bedeutet. Jede Einheit wird nach Wunsch konfiguriert, von Hand gefertigt und europaweit geliefert.",
+      "closing": "Wir lagern Qualität nicht aus. Wir verantworten jeden Schritt — vom ersten Schnitt bis zum Haustürschlüssel."
     },
     "contactSection": {
       "heading": "Es geht darum, was wir gemeinsam erreichen können.",

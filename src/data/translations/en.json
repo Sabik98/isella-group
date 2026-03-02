@@ -14,22 +14,22 @@
     },
     "about": {
       "title": "Who We Are",
-      "description": "We develop {innovative} — from modular houses and tiny houses to consulting and brand management. Our team of {specialists} covers architecture, production, sales, and international project management. Our goal is to deliver {products} that set new standards in sustainable living.",
-      "descriptionPlain": "We develop innovative real estate and brand projects — from modular houses and tiny houses to consulting and brand management. Our team of specialists covers architecture, production, sales, and international project management. Our goal is to deliver high-quality, sustainable products that set new standards in sustainable living.",
+      "description": "What started as a bold idea in 2020 has grown into a group of companies that {bold1}. From our own production facility in Germany to sales operations across Europe, we turn raw materials into {bold2} and ideas into {bold3}. Every project we take on starts with one question: how can we do this better?",
+      "descriptionPlain": "What started as a bold idea in 2020 has grown into a group of companies that builds homes, brands, and futures. From our own production facility in Germany to sales operations across Europe, we turn raw materials into living spaces and ideas into thriving businesses. Every project we take on starts with one question: how can we do this better?",
       "highlight": "Modular houses, tiny houses, and sustainable brands — built by a team that thinks globally.",
-      "bold1": "innovative real estate and brand projects",
-      "bold2": "specialists",
-      "bold3": "high-quality, sustainable products"
+      "bold1": "builds homes, brands, and futures",
+      "bold2": "living spaces",
+      "bold3": "thriving businesses"
     },
     "teamwork": {
-      "description": "We are a team of {bold} — architects, builders, marketers, and project managers working across Germany, Poland, and beyond. We work together for the success of Isella Group!",
-      "descriptionPlain": "We are a team of ambitious professionals — architects, builders, marketers, and project managers working across Germany, Poland, and beyond. We work together for the success of Isella Group!",
-      "bold": "ambitious professionals",
-      "closing": "We work together for the success of Isella Group!"
+      "description": "Behind every house we build and every brand we launch, there are {bold} — drawing blueprints at midnight, testing materials by hand, closing deals in three languages. We're based in Germany and Poland, but our mindset has no borders. Different backgrounds, one mission.",
+      "descriptionPlain": "Behind every house we build and every brand we launch, there are real people — drawing blueprints at midnight, testing materials by hand, closing deals in three languages. We're based in Germany and Poland, but our mindset has no borders. Different backgrounds, one mission.",
+      "bold": "real people",
+      "closing": "Different backgrounds, one mission."
     },
     "innovation": {
-      "description": "Our flagship project Berghaus produces modular houses and tiny houses in our own facility in Kierspe, Germany. With digital sales channels and an international team across three countries, we bring sustainable living solutions to customers throughout Europe.",
-      "closing": "From production to delivery — we control the entire process to ensure the highest quality."
+      "description": "In our production hall in Kierspe, raw timber becomes someone's future home. Berghaus — our flagship — designs, builds, and delivers modular houses and tiny houses that prove sustainable living doesn't mean compromise. Every unit is configured to order, crafted by hand, and delivered across Europe.",
+      "closing": "We don't outsource quality. We own every step — from the first cut to the front door key."
     },
     "contactSection": {
       "heading": "It's all about what we can do together.",
