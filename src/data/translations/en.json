@@ -31,6 +31,12 @@
       "description": "In our production hall in Kierspe, raw timber becomes someone's future home. Berghaus — our flagship — designs, builds, and delivers modular houses and tiny houses that prove sustainable living doesn't mean compromise. Every unit is configured to order, crafted by hand, and delivered across Europe.",
       "closing": "We don't outsource quality. We own every step — from the first cut to the front door key."
     },
+    "stats": {
+      "founded": { "value": "2020", "label": "Founded" },
+      "team": { "value": "50+", "label": "Team Members" },
+      "countries": { "value": "3", "label": "Countries" },
+      "projects": { "value": "100+", "label": "Projects" }
+    },
     "contactSection": {
       "heading": "It's all about what we can do together.",
       "subheading": "Follow our social media to stay updated.",

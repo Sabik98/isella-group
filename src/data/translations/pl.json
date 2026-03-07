@@ -55,6 +55,12 @@
       "description": "W naszej hali produkcyjnej w Kierspe surowe drewno zamienia się w czyjś przyszły dom. Berghaus — nasz flagowy projekt — projektuje, buduje i dostarcza domy modułowe i tiny houses, które dowodzą, że zrównoważone życie nie oznacza kompromisów. Każda jednostka jest konfigurowana na zamówienie, wykonywana ręcznie i dostarczana w całej Europie.",
       "closing": "Nie zlecamy jakości na zewnątrz. Odpowiadamy za każdy krok — od pierwszego cięcia po klucz do drzwi."
     },
+    "stats": {
+      "founded": { "value": "2020", "label": "Założona" },
+      "team": { "value": "50+", "label": "Członków zespołu" },
+      "countries": { "value": "3", "label": "Kraje" },
+      "projects": { "value": "100+", "label": "Projekty" }
+    },
     "contactSection": {
       "heading": "Chodzi o to, co mo\u017cemy osi\u0105gn\u0105\u0107 razem.",
       "subheading": "Obserwuj nasze media spo\u0142eczno\u015bciowe, aby by\u0107 na bie\u017c\u0105co.",
