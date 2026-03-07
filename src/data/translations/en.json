@@ -162,10 +162,7 @@
     "title": "Contact",
     "subtitle": "Happy to answer all your questions",
     "description": "Don't miss the opportunity, contact Isella Group. We will listen to your needs and formulate the appropriate offer.",
-    "emailCta": "Email Us",
-    "callCta": "Call Us",
-    "emailDescription": "Send us a message and we'll get back to you promptly.",
-    "callDescription": "Speak directly with our team.",
+    "bookCta": "Book an Appointment",
     "offices": {
       "germany": {
         "title": "Germany",

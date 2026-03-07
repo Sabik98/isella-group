@@ -162,10 +162,7 @@
     "title": "Kontakt",
     "subtitle": "Wir beantworten gerne alle deine Fragen",
     "description": "Verpasse nicht die Gelegenheit, kontaktiere Isella Group. Wir hören dir zu und erstellen das passende Angebot.",
-    "emailCta": "E-Mail schreiben",
-    "callCta": "Anrufen",
-    "emailDescription": "Schreib uns eine Nachricht und wir melden uns schnellstmöglich.",
-    "callDescription": "Sprich direkt mit unserem Team.",
+    "bookCta": "Termin buchen",
     "offices": {
       "germany": {
         "title": "Deutschland",

@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Calendar } from 'lucide-react';
 
 export default function ContactPageClient() {
   const t = useTranslations();
@@ -27,23 +27,15 @@ export default function ContactPageClient() {
             {t('contact.description')}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            {/* Email Button */}
+          <div className="flex items-center justify-center mb-16">
             <a
-              href="mailto:info@isella-group.com"
+              href="https://www.cal.eu/dennis-czekalla/20min?user=dennis-czekalla&overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-isella-orange text-white font-semibold px-8 py-4 rounded-lg hover:bg-isella-orange-dark transition-colors text-lg"
             >
-              <Mail className="w-6 h-6" />
-              {t('contact.emailCta')}
-            </a>
-
-            {/* Call Button */}
-            <a
-              href="tel:+4923598092855"
-              className="inline-flex items-center gap-3 bg-isella-blue text-white font-semibold px-8 py-4 rounded-lg hover:bg-isella-blue-dark transition-colors text-lg"
-            >
-              <Phone className="w-6 h-6" />
-              {t('contact.callCta')}
+              <Calendar className="w-6 h-6" />
+              {t('contact.bookCta')}
             </a>
           </div>
 

@@ -162,10 +162,7 @@
     "title": "Kontakt",
     "subtitle": "Ch\u0119tnie odpowiemy na wszystkie pytania",
     "description": "Nie przegap okazji, skontaktuj si\u0119 z Isella Group. Wys\u0142uchamy Twoich potrzeb i przygotujemy odpowiedni\u0105 ofert\u0119.",
-    "emailCta": "Napisz do nas",
-    "callCta": "Zadzwo\u0144",
-    "emailDescription": "Wy\u015blij nam wiadomo\u015b\u0107, a odpowiemy jak najszybciej.",
-    "callDescription": "Porozmawiaj bezpo\u015brednio z naszym zespo\u0142em.",
+    "bookCta": "Umów spotkanie",
     "offices": {
       "germany": {
         "title": "Niemcy",
