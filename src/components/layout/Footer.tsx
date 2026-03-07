@@ -76,10 +76,6 @@ export default function Footer() {
               <p className="text-sm font-semibold text-white">
                 {tContact('offices.germany.company')}
               </p>
-              <div className="flex items-start gap-2 text-sm text-white/70">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-isella-orange" />
-                <span>{tContact('offices.germany.address')}</span>
-              </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <Phone className="w-4 h-4 shrink-0 text-isella-orange" />
                 <a
