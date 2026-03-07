@@ -87,8 +87,9 @@
     },
     "timeline": {
       "milestone1": { "year": "2020", "text": "Założona przez Dennisa Czekallę z odważną wizją innowacyjnego biznesu" },
-      "milestone2": { "year": "2022", "text": "Własny zakład produkcyjny wybudowany w Kierspe, Niemcy" },
-      "milestone3": { "year": "2024", "text": "Sprzedaż rozszerzona na całą Europę — Niemcy, Polska i dalej" }
+      "milestone2": { "year": "2021", "text": "Własny zakład produkcyjny wybudowany w Targowisko 579, 32-015 Kłaj, Polska" },
+      "milestone3": { "year": "2023", "text": "Założenie społeczności wystąpień publicznych ThriveTalk" },
+      "milestone4": { "year": "2025", "text": "Pierwsze 100 domów wybudowanych" }
     }
   },
   "projects": {

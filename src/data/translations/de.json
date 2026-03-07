@@ -87,8 +87,9 @@
     },
     "timeline": {
       "milestone1": { "year": "2020", "text": "Gegründet von Dennis Czekalla mit einer mutigen Vision für innovatives Business" },
-      "milestone2": { "year": "2022", "text": "Eigene Produktionsstätte in Kierspe, Deutschland errichtet" },
-      "milestone3": { "year": "2024", "text": "Vertrieb europaweit ausgebaut — Deutschland, Polen und darüber hinaus" }
+      "milestone2": { "year": "2021", "text": "Eigene Produktionsstätte in Targowisko 579, 32-015 Kłaj, Polen errichtet" },
+      "milestone3": { "year": "2023", "text": "Gründung der ThriveTalk Public-Speaking-Community" },
+      "milestone4": { "year": "2025", "text": "Erste 100 Häuser gebaut" }
     }
   },
   "projects": {
