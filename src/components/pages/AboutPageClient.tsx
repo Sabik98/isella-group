@@ -55,7 +55,7 @@ function useScrollY() {
 
 /* ───────────────────── Timeline Data ───────────────────── */
 
-const MILESTONES = ['milestone1', 'milestone2', 'milestone3', 'milestone4'] as const;
+const MILESTONES = ['milestone1', 'milestone2', 'milestone3', 'milestone4', 'milestone5'] as const;
 
 /* ───────────────────── Component ───────────────────── */
 
