@@ -57,7 +57,7 @@
     },
     "stats": {
       "founded": { "value": "2020", "label": "Założona" },
-      "team": { "value": "50+", "label": "Członków zespołu" },
+      "team": { "value": "20+", "label": "Członków zespołu" },
       "countries": { "value": "3", "label": "Kraje" },
       "projects": { "value": "100+", "label": "Projekty" }
     },

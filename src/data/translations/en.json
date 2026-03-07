@@ -33,7 +33,7 @@
     },
     "stats": {
       "founded": { "value": "2020", "label": "Founded" },
-      "team": { "value": "50+", "label": "Team Members" },
+      "team": { "value": "20+", "label": "Team Members" },
       "countries": { "value": "3", "label": "Countries" },
       "projects": { "value": "100+", "label": "Projects" }
     },

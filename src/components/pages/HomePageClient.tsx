@@ -17,7 +17,7 @@ const SECTION_IDS = ['hero', 'about', 'stats', 'teamwork', 'innovation'] as cons
 
 const STATS = [
   { key: 'founded', numericValue: 2020, suffix: '' },
-  { key: 'team', numericValue: 50, suffix: '+' },
+  { key: 'team', numericValue: 20, suffix: '+' },
   { key: 'countries', numericValue: 3, suffix: '' },
   { key: 'projects', numericValue: 100, suffix: '+' },
 ] as const;
