@@ -164,6 +164,46 @@ body {
   animation: orbitSlow 30s linear infinite;
 }
 
+/* ---- About Page Animations ---- */
+
+@keyframes timelineGrow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-timeline-grow {
+  height: 0;
+}
+
+.animate-timeline-grow.in-view {
+  animation: timelineGrow 1.5s ease-out forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: none;
+}
+
+.animate-scale-in.in-view {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
 /* ---- Accessibility ---- */
 
 @media (prefers-reduced-motion: reduce) {
@@ -175,7 +215,9 @@ body {
   .animate-slide-in-right,
   .animate-fade-in-up,
   .animate-line-grow-center,
-  .animate-orbit-slow {
+  .animate-orbit-slow,
+  .animate-timeline-grow,
+  .animate-scale-in {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
@@ -184,9 +226,12 @@ body {
   .animate-slide-in-left.in-view,
   .animate-slide-in-right.in-view,
   .animate-fade-in-up.in-view,
-  .animate-line-grow-center.in-view {
+  .animate-line-grow-center.in-view,
+  .animate-timeline-grow.in-view,
+  .animate-scale-in.in-view {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+    height: auto !important;
   }
 }

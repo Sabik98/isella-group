@@ -84,6 +84,11 @@
     "mission": {
       "title": "Unsere Mission",
       "description": "Wir setzen uns dafür ein, nachhaltige Wohnlösungen zu schaffen und Marken aufzubauen, die einen Unterschied machen — angetrieben von einem internationalen Team und einem praxisnahen Ansatz."
+    },
+    "timeline": {
+      "milestone1": { "year": "2020", "text": "Gegründet von Dennis Czekalla mit einer mutigen Vision für innovatives Business" },
+      "milestone2": { "year": "2022", "text": "Eigene Produktionsstätte in Kierspe, Deutschland errichtet" },
+      "milestone3": { "year": "2024", "text": "Vertrieb europaweit ausgebaut — Deutschland, Polen und darüber hinaus" }
     }
   },
   "projects": {

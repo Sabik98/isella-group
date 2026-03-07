@@ -84,6 +84,11 @@
     "mission": {
       "title": "Our Mission",
       "description": "We are committed to creating sustainable living solutions and building brands that make a difference — powered by an international team and a hands-on approach to business."
+    },
+    "timeline": {
+      "milestone1": { "year": "2020", "text": "Founded by Dennis Czekalla with a bold vision for innovative business" },
+      "milestone2": { "year": "2022", "text": "Own production facility built in Kierspe, Germany" },
+      "milestone3": { "year": "2024", "text": "Sales operations expanded across Europe — Germany, Poland, and beyond" }
     }
   },
   "projects": {

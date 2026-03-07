@@ -83,7 +83,12 @@
     },
     "mission": {
       "title": "Nasza misja",
-      "description": "Jeste\u015bmy zaanga\u017cowani w tworzenie zr\u00f3wnowa\u017conych rozwi\u0105za\u0144 mieszkaniowych i budowanie marek, kt\u00f3re maj\u0105 znaczenie — nap\u0119dzani przez mi\u0119dzynarodowy zesp\u00f3\u0142 i praktyczne podej\u015bcie do biznesu."
+      "description": "Jesteśmy zaangażowani w tworzenie zrównoważonych rozwiązań mieszkaniowych i budowanie marek, które mają znaczenie — napędzani przez międzynarodowy zespół i praktyczne podejście do biznesu."
+    },
+    "timeline": {
+      "milestone1": { "year": "2020", "text": "Założona przez Dennisa Czekallę z odważną wizją innowacyjnego biznesu" },
+      "milestone2": { "year": "2022", "text": "Własny zakład produkcyjny wybudowany w Kierspe, Niemcy" },
+      "milestone3": { "year": "2024", "text": "Sprzedaż rozszerzona na całą Europę — Niemcy, Polska i dalej" }
     }
   },
   "projects": {
