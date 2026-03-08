@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ArrowUpRight } from 'lucide-react';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 
 /* ───────────────────── Custom Hooks ───────────────────── */
 
@@ -53,6 +53,38 @@ function useScrollY() {
   return scrollY;
 }
 
+function useScrollProgress(ref: React.RefObject<HTMLDivElement | null>) {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const rect = el.getBoundingClientRect();
+          const windowH = window.innerHeight;
+          const start = windowH;
+          const end = -rect.height;
+          const current = rect.top;
+          const p = Math.min(1, Math.max(0, (start - current) / (start - end)));
+          setProgress(p);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [ref]);
+
+  return progress;
+}
+
 /* ───────────────────── Timeline Data ───────────────────── */
 
 const MILESTONES = ['milestone1', 'milestone2', 'milestone3', 'milestone4', 'milestone5'] as const;
@@ -64,7 +96,9 @@ export default function AboutPageClient() {
   const scrollY = useScrollY();
 
   // InView refs
-  const timeline = useInView(0.2);
+  const timeline = useInView(0.1);
+  const timelineContainerRef = useRef<HTMLDivElement>(null);
+  const scrollProgress = useScrollProgress(timelineContainerRef);
   const teamSection = useInView(0.15);
   const missionSection = useInView(0.2);
 
@@ -133,7 +167,7 @@ export default function AboutPageClient() {
         </a>
       </section>
 
-      {/* ═══════ Section 2: Story with Timeline ═══════ */}
+      {/* ═══════ Section 2: Story with SVG Path Timeline ═══════ */}
       <section id="story" className="bg-white py-20 px-4 md:py-28">
         <div className="mx-auto max-w-5xl">
           {/* Intro paragraph */}
@@ -146,30 +180,174 @@ export default function AboutPageClient() {
             </p>
           </div>
 
-          {/* Timeline */}
-          <div className="relative mt-16 ml-6 border-l-0 pl-8 md:ml-12 md:pl-12">
-            {/* Animated orange vertical line */}
-            <div
-              className={`absolute left-0 top-0 w-0.5 bg-isella-orange animate-timeline-grow ${timeline.inView ? 'in-view' : ''}`}
-            />
-
-            {MILESTONES.map((key, i) => (
-              <div
-                key={key}
-                className={`relative mb-12 last:mb-0 animate-fade-in-up ${timeline.inView ? 'in-view' : ''}`}
-                style={{ animationDelay: timeline.inView ? `${0.4 + i * 0.3}s` : '0s' }}
+          {/* SVG Path Journey Timeline */}
+          <div ref={timelineContainerRef} className="relative mt-20">
+            {/* ── Desktop: Winding SVG path ── */}
+            <div className="hidden md:block relative" style={{ height: `${MILESTONES.length * 180}px` }}>
+              {/* SVG Path */}
+              <svg
+                className="absolute inset-0 w-full h-full"
+                viewBox="0 0 800 900"
+                preserveAspectRatio="none"
+                fill="none"
               >
-                {/* Dot on the line */}
-                <div className="absolute -left-8 top-1 h-4 w-4 rounded-full border-4 border-isella-orange bg-white md:-left-12" />
+                {/* Background path (faint) */}
+                <path
+                  d="M 400 50 C 400 50, 650 150, 650 230 C 650 310, 150 310, 150 420 C 150 530, 650 530, 650 620 C 650 710, 150 710, 150 800"
+                  stroke="#e5e7eb"
+                  strokeWidth="3"
+                  strokeDasharray="8 8"
+                  vectorEffect="non-scaling-stroke"
+                />
+                {/* Animated path (orange) */}
+                <path
+                  d="M 400 50 C 400 50, 650 150, 650 230 C 650 310, 150 310, 150 420 C 150 530, 650 530, 650 620 C 650 710, 150 710, 150 800"
+                  stroke="#d98732"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  vectorEffect="non-scaling-stroke"
+                  style={{
+                    strokeDasharray: 2600,
+                    strokeDashoffset: 2600 - 2600 * Math.min(scrollProgress * 1.6, 1),
+                    transition: 'stroke-dashoffset 0.05s linear',
+                  }}
+                />
+              </svg>
 
-                <span className="text-2xl font-bold text-isella-blue md:text-3xl">
-                  {t(`about.timeline.${key}.year`)}
-                </span>
-                <p className="mt-2 text-base leading-relaxed text-gray-600 md:text-lg">
-                  {t(`about.timeline.${key}.text`)}
-                </p>
-              </div>
-            ))}
+              {/* Milestone nodes */}
+              {MILESTONES.map((key, i) => {
+                // Positions along the winding path (evenly distributed)
+                const positions = [
+                  { x: '50%', y: '5.5%', align: 'left' as const },
+                  { x: '81.25%', y: '25.5%', align: 'left' as const },
+                  { x: '18.75%', y: '46.5%', align: 'right' as const },
+                  { x: '81.25%', y: '69%', align: 'left' as const },
+                  { x: '18.75%', y: '89%', align: 'right' as const },
+                ];
+                const pos = positions[i];
+                const nodeProgress = Math.min(scrollProgress * 1.6, 1);
+                const nodeThreshold = i / MILESTONES.length;
+                const isRevealed = nodeProgress > nodeThreshold;
+
+                return (
+                  <div
+                    key={key}
+                    className="absolute"
+                    style={{
+                      left: pos.x,
+                      top: pos.y,
+                      transform: 'translate(-50%, -50%)',
+                    }}
+                  >
+                    {/* Glow ring */}
+                    <div
+                      className="transition-all duration-700"
+                      style={{
+                        opacity: isRevealed ? 1 : 0,
+                        transform: isRevealed ? 'scale(1)' : 'scale(0.3)',
+                      }}
+                    >
+                      <div className="relative flex items-center justify-center">
+                        {/* Outer glow */}
+                        <div className="absolute w-12 h-12 rounded-full bg-isella-orange/20 animate-pulse" />
+                        {/* Inner dot */}
+                        <div className="relative w-5 h-5 rounded-full bg-isella-orange border-4 border-white shadow-lg z-10" />
+                      </div>
+                    </div>
+
+                    {/* Content card */}
+                    <div
+                      className={`absolute top-1/2 -translate-y-1/2 w-64 transition-all duration-700 ${
+                        pos.align === 'right' ? 'right-full mr-8' : 'left-full ml-8'
+                      }`}
+                      style={{
+                        opacity: isRevealed ? 1 : 0,
+                        transform: isRevealed
+                          ? 'translateY(-50%) translateX(0)'
+                          : `translateY(-50%) translateX(${pos.align === 'right' ? '30px' : '-30px'})`,
+                      }}
+                    >
+                      <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <span className="text-3xl font-bold text-isella-orange">
+                          {t(`about.timeline.${key}.year`)}
+                        </span>
+                        <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                          {t(`about.timeline.${key}.text`)}
+                        </p>
+                      </div>
+                      {/* Arrow pointing to node */}
+                      <div
+                        className={`absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-white border border-gray-100 rotate-45 ${
+                          pos.align === 'right'
+                            ? '-right-1.5 border-l-0 border-b-0'
+                            : '-left-1.5 border-r-0 border-t-0'
+                        }`}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* ── Mobile: Vertical path ── */}
+            <div className="md:hidden relative pl-12">
+              {/* Vertical SVG line */}
+              <svg
+                className="absolute left-4 top-0 w-2 h-full"
+                preserveAspectRatio="none"
+              >
+                <line x1="4" y1="0" x2="4" y2="100%" stroke="#e5e7eb" strokeWidth="2" strokeDasharray="6 6" />
+                <line
+                  x1="4" y1="0" x2="4" y2="100%"
+                  stroke="#d98732"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  style={{
+                    strokeDasharray: 1000,
+                    strokeDashoffset: 1000 - 1000 * Math.min(scrollProgress * 1.6, 1),
+                    transition: 'stroke-dashoffset 0.05s linear',
+                  }}
+                />
+              </svg>
+
+              {MILESTONES.map((key, i) => {
+                const nodeProgress = Math.min(scrollProgress * 1.6, 1);
+                const nodeThreshold = i / MILESTONES.length;
+                const isRevealed = nodeProgress > nodeThreshold;
+
+                return (
+                  <div key={key} className="relative mb-10 last:mb-0">
+                    {/* Node dot */}
+                    <div
+                      className="absolute -left-12 top-1 flex items-center justify-center transition-all duration-500"
+                      style={{
+                        opacity: isRevealed ? 1 : 0,
+                        transform: isRevealed ? 'scale(1)' : 'scale(0)',
+                      }}
+                    >
+                      <div className="absolute w-8 h-8 rounded-full bg-isella-orange/20 animate-pulse" />
+                      <div className="relative w-4 h-4 rounded-full bg-isella-orange border-3 border-white shadow-md z-10" />
+                    </div>
+
+                    {/* Content */}
+                    <div
+                      className="transition-all duration-600"
+                      style={{
+                        opacity: isRevealed ? 1 : 0,
+                        transform: isRevealed ? 'translateX(0)' : 'translateX(-20px)',
+                      }}
+                    >
+                      <span className="text-2xl font-bold text-isella-orange">
+                        {t(`about.timeline.${key}.year`)}
+                      </span>
+                      <p className="mt-1 text-base leading-relaxed text-gray-600">
+                        {t(`about.timeline.${key}.text`)}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
