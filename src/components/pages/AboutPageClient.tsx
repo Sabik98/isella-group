@@ -501,7 +501,7 @@ export default function AboutPageClient() {
           </div>
 
           {/* SVG Path Journey Timeline */}
-          <div ref={timelineContainerRef} className="relative mt-20">
+          <div ref={timelineContainerRef} className="relative mt-32">
             <TimelineDesktop milestones={MILESTONES} scrollProgress={scrollProgress} t={t} />
             <TimelineMobile milestones={MILESTONES} scrollProgress={scrollProgress} t={t} />
           </div>
