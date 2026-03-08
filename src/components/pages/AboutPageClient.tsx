@@ -219,30 +219,33 @@ function TimelineDesktop({
             />
           );
         })}
-
-        {/* ═══ Isella logo "driving" along the path ═══ */}
-        {animProgress > 0 && (
-          <g
-            transform={`translate(${logoPos.x}, ${logoPos.y})`}
-            filter="url(#logoGlow)"
-          >
-            {/* Outer glow ring */}
-            <circle cx="0" cy="0" r="22" fill="#d98732" opacity="0.15">
-              <animate attributeName="r" values="22;28;22" dur="2s" repeatCount="indefinite" />
-              <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2s" repeatCount="indefinite" />
-            </circle>
-            {/* White background circle */}
-            <circle cx="0" cy="0" r="16" fill="white" stroke="#d98732" strokeWidth="2" />
-            {/* Isella "I" mark */}
-            <g transform="translate(-10, -10) scale(0.5)">
-              <circle cx="20" cy="20" r="18" fill="#233e58" />
-              <rect x="14.5" y="8" width="4" height="24" rx="1" fill="#d98732" />
-              <rect x="20.5" y="8" width="4" height="10" rx="1" fill="white" />
-              <rect x="20.5" y="22" width="4" height="10" rx="1" fill="white" />
-            </g>
-          </g>
-        )}
       </svg>
+
+      {/* ═══ Isella logo "driving" along the path (HTML overlay) ═══ */}
+      {animProgress > 0 && (
+        <div
+          className="absolute z-20 pointer-events-none"
+          style={{
+            left: `${(logoPos.x / 800) * 100}%`,
+            top: `${(logoPos.y / 900) * 100}%`,
+            transform: 'translate(-50%, -50%)',
+            transition: 'left 0.05s linear, top 0.05s linear',
+          }}
+        >
+          {/* Outer glow pulse */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-isella-orange/15 animate-pulse" />
+          </div>
+          {/* Logo container */}
+          <div className="relative w-12 h-12 rounded-full bg-white shadow-xl border-2 border-isella-orange flex items-center justify-center overflow-hidden">
+            <img
+              src="/images/isella-icon.svg"
+              alt="Isella"
+              className="w-10 h-10 object-contain"
+            />
+          </div>
+        </div>
+      )}
 
       {/* Milestone cards */}
       {milestones.map((key, i) => {
@@ -343,17 +346,28 @@ function TimelineMobile({
             transition: 'stroke-dashoffset 0.05s linear',
           }}
         />
-        {/* Mobile driving logo */}
-        {animProgress > 0 && (
-          <g transform={`translate(12, ${animProgress * 100}%)`}>
-            <circle cx="0" cy="0" r="10" fill="white" stroke="#d98732" strokeWidth="1.5" />
-            <circle cx="0" cy="0" r="7" fill="#233e58" />
-            <rect x="-2.5" y="-5" width="2" height="10" rx="0.5" fill="#d98732" />
-            <rect x="1" y="-5" width="2" height="4" rx="0.5" fill="white" />
-            <rect x="1" y="1" width="2" height="4" rx="0.5" fill="white" />
-          </g>
-        )}
       </svg>
+
+      {/* Mobile driving logo */}
+      {animProgress > 0 && (
+        <div
+          className="absolute z-20 pointer-events-none"
+          style={{
+            left: '12px',
+            top: `${animProgress * 100}%`,
+            transform: 'translate(-50%, -50%)',
+            transition: 'top 0.05s linear',
+          }}
+        >
+          <div className="w-8 h-8 rounded-full bg-white shadow-lg border-2 border-isella-orange flex items-center justify-center overflow-hidden">
+            <img
+              src="/images/isella-icon.svg"
+              alt="Isella"
+              className="w-6 h-6 object-contain"
+            />
+          </div>
+        </div>
+      )}
 
       {milestones.map((key, i) => {
         const nodeThreshold = i / milestones.length;
