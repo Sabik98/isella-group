@@ -612,6 +612,28 @@ export default function AboutPageClient() {
         </div>
       </section>
 
+      {/* ═══════ Section 3b: Berghaus Production Team ═══════ */}
+      <section className="bg-white py-20 px-4 md:py-28">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold text-isella-blue md:text-4xl">
+            {t('about.productionTeam.title')}
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
+            {t('about.productionTeam.description')}
+          </p>
+          <div className="mt-10 relative rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/images/team/berghaus-production-team.jpg"
+              alt={t('about.productionTeam.title')}
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ═══════ Section 4: Mission — Cinematic full-width ═══════ */}
       <section className="relative min-h-[500px] overflow-hidden md:min-h-[550px]">
         {/* Background image with parallax */}
