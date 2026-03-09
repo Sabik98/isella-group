@@ -524,7 +524,7 @@ export default function AboutPageClient() {
           </p>
 
           {/* Team Cards — overlapping grid */}
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-5 md:gap-6">
             {/* Dennis */}
             <a
               href="https://dennis.cz"
@@ -548,27 +548,27 @@ export default function AboutPageClient() {
               <p className="text-sm text-gray-500">{t('about.team.members.dennis.role')}</p>
             </a>
 
-            {/* Placeholder Team Members */}
-            {[1, 2, 3].map((i) => (
+            {/* Team Members */}
+            {(['chris', 'vanya', 'anna', 'wojciech'] as const).map((member, i) => (
               <div
-                key={i}
+                key={member}
                 className={`text-center animate-scale-in ${teamSection.inView ? 'in-view' : ''}`}
                 style={{
-                  animationDelay: teamSection.inView ? `${0.3 + i * 0.15}s` : '0s',
-                  transform: i === 2 ? 'translateY(12px)' : undefined,
+                  animationDelay: teamSection.inView ? `${0.3 + (i + 1) * 0.15}s` : '0s',
+                  transform: i === 1 ? 'translateY(12px)' : undefined,
                 }}
               >
-                <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 bg-gray-200 flex items-center justify-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                  <svg
-                    className="w-16 h-16 text-gray-400"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
+                <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 bg-gradient-to-br from-isella-blue/10 to-isella-blue/5 flex items-center justify-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <div className="w-20 h-20 rounded-full bg-isella-blue/15 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-isella-blue/60">
+                      {t(`about.team.members.${member}.name`).charAt(0)}
+                    </span>
+                  </div>
                 </div>
-                <h4 className="font-bold text-gray-400">Team Member</h4>
-                <p className="text-sm text-gray-400">Coming Soon</p>
+                <h4 className="font-bold text-isella-blue">
+                  {t(`about.team.members.${member}.name`)}
+                </h4>
+                <p className="text-sm text-gray-500">{t(`about.team.members.${member}.role`)}</p>
               </div>
             ))}
           </div>

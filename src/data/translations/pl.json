@@ -77,7 +77,23 @@
       "members": {
         "dennis": {
           "name": "Dennis",
-          "role": "CEO i Za\u0142o\u017cyciel"
+          "role": "CEO i Założyciel"
+        },
+        "chris": {
+          "name": "Chris",
+          "role": "Sieć IT i Automatyzacja AI"
+        },
+        "vanya": {
+          "name": "Vanya",
+          "role": "Marketing"
+        },
+        "anna": {
+          "name": "Anna",
+          "role": "Księgowość i Finanse"
+        },
+        "wojciech": {
+          "name": "Wojciech",
+          "role": "Kierownik Produkcji"
         }
       }
     },

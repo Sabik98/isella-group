@@ -78,6 +78,22 @@
         "dennis": {
           "name": "Dennis",
           "role": "CEO & Founder"
+        },
+        "chris": {
+          "name": "Chris",
+          "role": "IT Network & AI Automation"
+        },
+        "vanya": {
+          "name": "Vanya",
+          "role": "Marketing"
+        },
+        "anna": {
+          "name": "Anna",
+          "role": "Accounting & Finance"
+        },
+        "wojciech": {
+          "name": "Wojciech",
+          "role": "Production Manager"
         }
       }
     },
