@@ -54,32 +54,39 @@ function useScrollY() {
 }
 
 function useScrollProgress(ref: React.RefObject<HTMLDivElement | null>) {
+  const progressRef = useRef(0);
+  const smoothRef = useRef(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    let ticking = false;
-    const onScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          const rect = el.getBoundingClientRect();
-          const windowH = window.innerHeight;
-          const start = windowH;
-          const end = -rect.height;
-          const current = rect.top;
-          const p = Math.min(1, Math.max(0, (start - current) / (start - end)));
-          setProgress(p);
-          ticking = false;
-        });
-        ticking = true;
-      }
+    let rafId: number;
+
+    const tick = () => {
+      // Read raw scroll progress
+      const rect = el.getBoundingClientRect();
+      const windowH = window.innerHeight;
+      const start = windowH;
+      const end = -rect.height;
+      const current = rect.top;
+      const raw = Math.min(1, Math.max(0, (start - current) / (start - end)));
+      progressRef.current = raw;
+
+      // Lerp for smooth interpolation
+      const prev = smoothRef.current;
+      const next = prev + (raw - prev) * 0.12;
+      smoothRef.current = next;
+
+      // Only trigger React re-render when the value changes enough
+      setProgress(next);
+
+      rafId = requestAnimationFrame(tick);
     };
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener('scroll', onScroll);
+    rafId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId);
   }, [ref]);
 
   return progress;
@@ -121,23 +128,47 @@ function TimelineDesktop({
   t: (key: string) => string;
 }) {
   const pathRef = useRef<SVGPathElement>(null);
-  const [logoPos, setLogoPos] = useState({ x: 400, y: 50, angle: 0 });
+  const trailPathRef = useRef<SVGPathElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
+  const trailCirclesRef = useRef<(SVGCircleElement | null)[]>([]);
   const animProgress = Math.min(scrollProgress * 1.6, 1);
 
-  // Calculate logo position along path
+  // Direct DOM updates for logo + trail — no state, no transitions
   useEffect(() => {
     const path = pathRef.current;
-    if (!path) return;
+    const logo = logoRef.current;
+    const trailPath = trailPathRef.current;
+    if (!path || !logo) return;
 
     const totalLen = path.getTotalLength();
     const currentLen = totalLen * animProgress;
+
+    // Update trail stroke
+    if (trailPath) {
+      trailPath.style.strokeDashoffset = `${PATH_LENGTH - PATH_LENGTH * animProgress}`;
+    }
+
+    // Update logo position
     const point = path.getPointAtLength(currentLen);
+    logo.style.left = `${(point.x / 800) * 100}%`;
+    logo.style.top = `${(point.y / 900) * 100}%`;
+    logo.style.opacity = animProgress > 0 ? '1' : '0';
 
-    // Get angle from tangent
-    const ahead = path.getPointAtLength(Math.min(currentLen + 2, totalLen));
-    const angle = Math.atan2(ahead.y - point.y, ahead.x - point.x) * (180 / Math.PI);
-
-    setLogoPos({ x: point.x, y: point.y, angle });
+    // Update particle trail
+    const offsets = [0.01, 0.025, 0.04];
+    offsets.forEach((offset, i) => {
+      const circle = trailCirclesRef.current[i];
+      if (!circle) return;
+      if (animProgress < 0.02) {
+        circle.setAttribute('opacity', '0');
+        return;
+      }
+      const trailLen = Math.max(0, currentLen - offset * totalLen);
+      const pt = path.getPointAtLength(trailLen);
+      circle.setAttribute('cx', `${pt.x}`);
+      circle.setAttribute('cy', `${pt.y}`);
+      circle.setAttribute('opacity', `${0.4 - i * 0.12}`);
+    });
   }, [animProgress]);
 
   // Node positions along the path (fraction 0–1)
@@ -158,24 +189,6 @@ function TimelineDesktop({
         preserveAspectRatio="none"
         fill="none"
       >
-        {/* Glow filter for the orange path */}
-        <defs>
-          <filter id="pathGlow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="4" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-          <filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="6" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-
         {/* Background path — dotted guide */}
         <path
           d={JOURNEY_PATH}
@@ -185,67 +198,75 @@ function TimelineDesktop({
           vectorEffect="non-scaling-stroke"
         />
 
-        {/* Animated orange trail */}
+        {/* Animated orange trail — no filter, no CSS transition */}
         <path
-          ref={pathRef}
+          ref={(el) => { pathRef.current = el; trailPathRef.current = el; }}
           d={JOURNEY_PATH}
           stroke="#d98732"
           strokeWidth="3"
           strokeLinecap="round"
           vectorEffect="non-scaling-stroke"
-          filter="url(#pathGlow)"
           style={{
             strokeDasharray: PATH_LENGTH,
             strokeDashoffset: PATH_LENGTH - PATH_LENGTH * animProgress,
-            transition: 'stroke-dashoffset 0.05s linear',
+            willChange: 'stroke-dashoffset',
           }}
         />
 
-        {/* Particle trail behind logo */}
-        {animProgress > 0.02 && [0.01, 0.025, 0.04].map((offset, i) => {
-          const path = pathRef.current;
-          if (!path) return null;
-          const totalLen = path.getTotalLength();
-          const trailLen = Math.max(0, totalLen * animProgress - (offset * totalLen));
-          const pt = path.getPointAtLength(trailLen);
-          return (
-            <circle
-              key={i}
-              cx={pt.x}
-              cy={pt.y}
-              r={3 - i}
-              fill="#d98732"
-              opacity={0.4 - i * 0.12}
-            />
-          );
-        })}
+        {/* Soft glow behind trail (static, no filter recalc) */}
+        <path
+          d={JOURNEY_PATH}
+          stroke="#d98732"
+          strokeWidth="8"
+          strokeLinecap="round"
+          vectorEffect="non-scaling-stroke"
+          opacity="0.15"
+          style={{
+            strokeDasharray: PATH_LENGTH,
+            strokeDashoffset: PATH_LENGTH - PATH_LENGTH * animProgress,
+            willChange: 'stroke-dashoffset',
+          }}
+        />
+
+        {/* Particle trail — refs updated directly */}
+        {[0, 1, 2].map((i) => (
+          <circle
+            key={i}
+            ref={(el) => { trailCirclesRef.current[i] = el; }}
+            cx="400"
+            cy="50"
+            r={3 - i}
+            fill="#d98732"
+            opacity="0"
+          />
+        ))}
       </svg>
 
-      {/* ═══ Isella logo "driving" along the path (HTML overlay) ═══ */}
-      {animProgress > 0 && (
-        <div
-          className="absolute z-20 pointer-events-none"
-          style={{
-            left: `${(logoPos.x / 800) * 100}%`,
-            top: `${(logoPos.y / 900) * 100}%`,
-            transform: 'translate(-50%, -50%)',
-            transition: 'left 0.05s linear, top 0.05s linear',
-          }}
-        >
-          {/* Outer glow pulse */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 rounded-full bg-isella-orange/15 animate-pulse" />
-          </div>
-          {/* Logo container */}
-          <div className="relative w-12 h-12 rounded-full bg-white shadow-xl border-2 border-isella-orange flex items-center justify-center overflow-hidden">
-            <img
-              src="/images/isella-icon.svg"
-              alt="Isella"
-              className="w-10 h-10 object-contain"
-            />
-          </div>
+      {/* ═══ Isella logo "driving" along the path ═══ */}
+      <div
+        ref={logoRef}
+        className="absolute z-20 pointer-events-none"
+        style={{
+          left: '50%',
+          top: '5.7%',
+          transform: 'translate(-50%, -50%)',
+          opacity: 0,
+          willChange: 'left, top',
+        }}
+      >
+        {/* Outer glow pulse */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-isella-orange/15 animate-pulse" />
         </div>
-      )}
+        {/* Logo container */}
+        <div className="relative w-12 h-12 rounded-full bg-white shadow-xl border-2 border-isella-orange flex items-center justify-center overflow-hidden">
+          <img
+            src="/images/isella-icon.svg"
+            alt="Isella"
+            className="w-10 h-10 object-contain"
+          />
+        </div>
+      </div>
 
       {/* Milestone cards */}
       {milestones.map((key, i) => {
@@ -264,10 +285,10 @@ function TimelineDesktop({
           >
             {/* Glowing node dot */}
             <div
-              className="transition-all duration-700"
               style={{
                 opacity: isRevealed ? 1 : 0,
                 transform: isRevealed ? 'scale(1)' : 'scale(0.3)',
+                transition: 'opacity 0.7s ease-out, transform 0.7s ease-out',
               }}
             >
               <div className="relative flex items-center justify-center">
@@ -278,7 +299,7 @@ function TimelineDesktop({
 
             {/* Content card */}
             <div
-              className={`absolute top-1/2 -translate-y-1/2 w-64 transition-all duration-700 ${
+              className={`absolute top-1/2 -translate-y-1/2 w-64 ${
                 pos.align === 'right' ? 'right-full mr-8' : 'left-full ml-8'
               }`}
               style={{
@@ -286,6 +307,7 @@ function TimelineDesktop({
                 transform: isRevealed
                   ? 'translateY(-50%) translateX(0)'
                   : `translateY(-50%) translateX(${pos.align === 'right' ? '30px' : '-30px'})`,
+                transition: 'opacity 0.7s ease-out, transform 0.7s ease-out',
               }}
             >
               <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -323,8 +345,22 @@ function TimelineMobile({
   scrollProgress: number;
   t: (key: string) => string;
 }) {
-  const mobilePathRef = useRef<SVGLineElement>(null);
+  const mobileLineRef = useRef<SVGLineElement>(null);
+  const mobileLogoRef = useRef<HTMLDivElement>(null);
   const animProgress = Math.min(scrollProgress * 1.6, 1);
+
+  // Direct DOM updates for mobile line + logo
+  useEffect(() => {
+    const line = mobileLineRef.current;
+    const logo = mobileLogoRef.current;
+    if (line) {
+      line.style.strokeDashoffset = `${1000 - 1000 * animProgress}`;
+    }
+    if (logo) {
+      logo.style.top = `${animProgress * 100}%`;
+      logo.style.opacity = animProgress > 0 ? '1' : '0';
+    }
+  }, [animProgress]);
 
   return (
     <div className="md:hidden relative pl-14">
@@ -335,39 +371,39 @@ function TimelineMobile({
       >
         <line x1="12" y1="0" x2="12" y2="100%" stroke="#e5e7eb" strokeWidth="2" strokeDasharray="6 6" />
         <line
-          ref={mobilePathRef}
+          ref={mobileLineRef}
           x1="12" y1="0" x2="12" y2="100%"
           stroke="#d98732"
           strokeWidth="2"
           strokeLinecap="round"
           style={{
             strokeDasharray: 1000,
-            strokeDashoffset: 1000 - 1000 * animProgress,
-            transition: 'stroke-dashoffset 0.05s linear',
+            strokeDashoffset: 1000,
+            willChange: 'stroke-dashoffset',
           }}
         />
       </svg>
 
       {/* Mobile driving logo */}
-      {animProgress > 0 && (
-        <div
-          className="absolute z-20 pointer-events-none"
-          style={{
-            left: '12px',
-            top: `${animProgress * 100}%`,
-            transform: 'translate(-50%, -50%)',
-            transition: 'top 0.05s linear',
-          }}
-        >
-          <div className="w-8 h-8 rounded-full bg-white shadow-lg border-2 border-isella-orange flex items-center justify-center overflow-hidden">
-            <img
-              src="/images/isella-icon.svg"
-              alt="Isella"
-              className="w-6 h-6 object-contain"
-            />
-          </div>
+      <div
+        ref={mobileLogoRef}
+        className="absolute z-20 pointer-events-none"
+        style={{
+          left: '12px',
+          top: '0%',
+          transform: 'translate(-50%, -50%)',
+          opacity: 0,
+          willChange: 'top',
+        }}
+      >
+        <div className="w-8 h-8 rounded-full bg-white shadow-lg border-2 border-isella-orange flex items-center justify-center overflow-hidden">
+          <img
+            src="/images/isella-icon.svg"
+            alt="Isella"
+            className="w-6 h-6 object-contain"
+          />
         </div>
-      )}
+      </div>
 
       {milestones.map((key, i) => {
         const nodeThreshold = i / milestones.length;
@@ -377,10 +413,11 @@ function TimelineMobile({
           <div key={key} className="relative mb-10 last:mb-0">
             {/* Node dot */}
             <div
-              className="absolute -left-[44px] top-1 flex items-center justify-center transition-all duration-500"
+              className="absolute -left-[44px] top-1 flex items-center justify-center"
               style={{
                 opacity: isRevealed ? 1 : 0,
                 transform: isRevealed ? 'scale(1)' : 'scale(0)',
+                transition: 'opacity 0.5s ease-out, transform 0.5s ease-out',
               }}
             >
               <div className="absolute w-8 h-8 rounded-full bg-isella-orange/20 animate-pulse" />
@@ -392,7 +429,7 @@ function TimelineMobile({
               style={{
                 opacity: isRevealed ? 1 : 0,
                 transform: isRevealed ? 'translateX(0)' : 'translateX(-20px)',
-                transition: 'all 0.6s ease-out',
+                transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
               }}
             >
               <span className="text-2xl font-bold text-isella-orange">
