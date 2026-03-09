@@ -14,8 +14,8 @@
     },
     "about": {
       "title": "Kim jeste\u015bmy",
-      "description": "To, co w 2020 roku zaczęło się jako odważny pomysł, rozrosło się w grupę firm, która {bold1}. Od własnego zakładu produkcyjnego w Niemczech po struktury sprzedaży w całej Europie, zamieniamy surowce w {bold2}, a pomysły w {bold3}. Przy każdym projekcie zadajemy sobie jedno pytanie: jak możemy to zrobić lepiej?",
-      "descriptionPlain": "To, co w 2020 roku zaczęło się jako odważny pomysł, rozrosło się w grupę firm, która buduje domy, marki i przyszłość. Od własnego zakładu produkcyjnego w Niemczech po struktury sprzedaży w całej Europie, zamieniamy surowce w przestrzenie do życia, a pomysły w prężne biznesy. Przy każdym projekcie zadajemy sobie jedno pytanie: jak możemy to zrobić lepiej?",
+      "description": "To, co w 2020 roku zaczęło się jako odważny pomysł, rozrosło się w grupę firm, która {bold1}. Od własnego zakładu produkcyjnego w Polsce po struktury sprzedaży w całej Europie, zamieniamy surowce w {bold2}, a pomysły w {bold3}. Przy każdym projekcie zadajemy sobie jedno pytanie: jak możemy to zrobić lepiej?",
+      "descriptionPlain": "To, co w 2020 roku zaczęło się jako odważny pomysł, rozrosło się w grupę firm, która buduje domy, marki i przyszłość. Od własnego zakładu produkcyjnego w Polsce po struktury sprzedaży w całej Europie, zamieniamy surowce w przestrzenie do życia, a pomysły w prężne biznesy. Przy każdym projekcie zadajemy sobie jedno pytanie: jak możemy to zrobić lepiej?",
       "highlight": "Domy modułowe, tiny houses i zrównoważone marki — budowane przez zespół, który myśli globalnie.",
       "bold1": "buduje domy, marki i przyszłość",
       "bold2": "przestrzenie do życia",
@@ -52,7 +52,7 @@
       "closing": "Różne pochodzenie, jedna misja."
     },
     "innovation": {
-      "description": "W naszej hali produkcyjnej w Kierspe surowe drewno zamienia się w czyjś przyszły dom. Berghaus — nasz flagowy projekt — projektuje, buduje i dostarcza domy modułowe i tiny houses, które dowodzą, że zrównoważone życie nie oznacza kompromisów. Każda jednostka jest konfigurowana na zamówienie, wykonywana ręcznie i dostarczana w całej Europie.",
+      "description": "W naszej hali produkcyjnej pod Krakowem w południowej Polsce surowe drewno zamienia się w czyjś przyszły dom. Berghaus — nasz flagowy projekt — projektuje, buduje i dostarcza domy modułowe i tiny houses, które dowodzą, że zrównoważone życie nie oznacza kompromisów. Każda jednostka jest konfigurowana na zamówienie, wykonywana ręcznie i dostarczana w całej Europie.",
       "closing": "Nie zlecamy jakości na zewnątrz. Odpowiadamy za każdy krok — od pierwszego cięcia po klucz do drzwi."
     },
     "stats": {
@@ -70,13 +70,13 @@
   "about": {
     "title": "O nas",
     "subtitle": "Nasza historia",
-    "story": "Isella Group została założona w 2020 roku przez Dennisa Czekallę z jasną misją: budować innowacyjne projekty, które mają znaczenie. Nasz flagowy projekt Berghaus — Tiny House & Domy Modułowe projektuje i produkuje zrównoważone domy w naszym własnym zakładzie produkcyjnym w Targowisku, Polska. Poza budownictwem napędzamy innowacje poprzez ThriveTalk, społeczność wystąpień publicznych, oraz BECZ, nasz projekt automatyzacji AI. Od jednego odważnego pomysłu po portfolio przyszłościowych marek — budujemy dalej.",
+    "story": "Isella Group została założona w 2020 roku przez Dennisa z jasną misją: budować innowacyjne projekty, które mają znaczenie. Nasz flagowy projekt Berghaus — Tiny House & Domy Modułowe projektuje i produkuje zrównoważone domy w naszym własnym zakładzie produkcyjnym w Targowisku, Polska. Poza budownictwem napędzamy innowacje poprzez ThriveTalk, społeczność wystąpień publicznych, oraz BECZ, nasz projekt automatyzacji AI. Od jednego odważnego pomysłu po portfolio przyszłościowych marek — budujemy dalej.",
     "team": {
       "title": "Nasz zesp\u00f3\u0142",
       "description": "Nasz zesp\u00f3\u0142 sk\u0142ada si\u0119 z ambitnych, kreatywnych profesjonalist\u00f3w cechuj\u0105cych si\u0119 du\u017c\u0105 r\u00f3\u017cnorodno\u015bci\u0105 kulturaln\u0105 i j\u0119zykow\u0105. Cz\u0142onkowie zespo\u0142u wnosz\u0105 r\u00f3\u017cnorodn\u0105 wiedz\u0119 z wielu dziedzin, w tym marketingu, sprzeda\u017cy, zarz\u0105dzania projektami, administracji, architektury i budownictwa.",
       "members": {
         "dennis": {
-          "name": "Dennis Czekalla",
+          "name": "Dennis",
           "role": "CEO i Za\u0142o\u017cyciel"
         }
       }
@@ -86,11 +86,11 @@
       "description": "Jesteśmy zaangażowani w tworzenie zrównoważonych rozwiązań mieszkaniowych i budowanie marek, które mają znaczenie — napędzani przez międzynarodowy zespół i praktyczne podejście do biznesu."
     },
     "timeline": {
-      "milestone1": { "year": "2020", "text": "Założona przez Dennisa Czekallę z odważną wizją innowacyjnego biznesu" },
+      "milestone1": { "year": "2020", "text": "Założona przez Dennisa z odważną wizją innowacyjnego biznesu" },
       "milestone2": { "year": "2021", "text": "Własny zakład produkcyjny wybudowany w Targowisko 579, 32-015 Kłaj, Polska" },
       "milestone3": { "year": "2023", "text": "Założenie społeczności wystąpień publicznych ThriveTalk" },
-      "milestone4": { "year": "2025", "text": "Pierwsze 100 domów wybudowanych" },
-      "milestone5": { "year": "2026", "text": "Założenie BECZ — automatyzacja AI i consulting wspierający firmy w optymalizacji procesów i inteligentnym skalowaniu" }
+      "milestone4": { "year": "2025", "text": "Założenie BECZ — automatyzacja AI i consulting wspierający firmy w optymalizacji procesów i inteligentnym skalowaniu" },
+      "milestone5": { "year": "2026", "text": "Pierwsze 100 domów wybudowanych" }
     }
   },
   "projects": {
@@ -98,7 +98,7 @@
     "subtitle": "Odkryj nasze przedsi\u0119wzi\u0119cia",
     "berghaus": {
       "title": "Berghaus — Tiny House & Domy Modu\u0142owe",
-      "description": "Nasz flagowy projekt: domy modu\u0142owe i tiny houses z wysokiej jako\u015bci naturalnych materia\u0142\u00f3w, produkowane w naszym w\u0142asnym zak\u0142adzie w Kierspe, Niemcy. Konfigurowalne wed\u0142ug indywidualnych specyfikacji, produkowane we w\u0142asnym zakresie od 2022 roku.",
+      "description": "Nasz flagowy projekt: domy modu\u0142owe i tiny houses z wysokiej jako\u015bci naturalnych materia\u0142\u00f3w, produkowane w naszym własnym zakładzie w Targowisku, Polska. Konfigurowalne wed\u0142ug indywidualnych specyfikacji, produkowane we w\u0142asnym zakresie od 2022 roku.",
       "cta": "Odwied\u017a Berghaus"
     },
     "brands": {
@@ -113,13 +113,13 @@
       },
       "denniscz": {
         "title": "dennis.cz",
-        "description": "Marka osobista CEO Dennisa Czekalli — m\u00f3wca, przedsi\u0119biorca i sportowiec wytrzyma\u0142o\u015bciowy."
+        "description": "Marka osobista CEO Dennisa — m\u00f3wca, przedsi\u0119biorca i sportowiec wytrzyma\u0142o\u015bciowy."
       }
     },
     "production": {
       "title": "Zak\u0142ad produkcyjny",
-      "description": "Nasze domy s\u0105 produkowane w naszym zak\u0142adzie produkcyjnym w Kierspe, Niemcy.",
-      "address": "Beethovenstr. 9, 58566 Kierspe, Niemcy"
+      "description": "Nasze domy są produkowane w naszym zakładzie produkcyjnym w Targowisku, Polska.",
+      "address": "Targowisko 579, 32-015 Kłaj, Polska"
     }
   },
   "career": {
@@ -135,13 +135,13 @@
     "jobs": {
       "production": {
         "title": "Pracownik produkcji",
-        "location": "Kierspe, Niemcy",
+        "location": "Targowisko, Polska",
         "type": "Pe\u0142ny etat",
         "description": "Do\u0142\u0105cz do naszego zespo\u0142u produkcyjnego buduj\u0105cego domy modu\u0142owe i tiny houses. Do\u015bwiadczenie w stolarce lub budownictwie mile widziane."
       },
       "sales": {
         "title": "Kierownik sprzeda\u017cy",
-        "location": "Kierspe, Niemcy / Zdalnie",
+        "location": "Targowisko, Polska / Zdalnie",
         "type": "Pe\u0142ny etat",
         "description": "Nap\u0119dzaj wzrost, \u0142\u0105cz\u0105c klient\u00f3w z naszymi zr\u00f3wnowa\u017conymi rozwi\u0105zaniami mieszkaniowymi. Preferowane do\u015bwiadczenie mi\u0119dzynarodowe."
       },

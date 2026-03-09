@@ -525,7 +525,7 @@ export default function AboutPageClient() {
 
           {/* Team Cards — overlapping grid */}
           <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-            {/* Dennis Czekalla */}
+            {/* Dennis */}
             <a
               href="https://dennis.cz"
               target="_blank"

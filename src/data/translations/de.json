@@ -14,8 +14,8 @@
     },
     "about": {
       "title": "Wer wir sind",
-      "description": "Was 2020 als mutige Idee begann, ist zu einer Unternehmensgruppe gewachsen, die {bold1}. Von unserer eigenen Produktionsstätte in Deutschland bis zu Vertriebsstrukturen in ganz Europa verwandeln wir Rohstoffe in {bold2} und Ideen in {bold3}. Bei jedem Projekt stellen wir uns eine Frage: Wie können wir das besser machen?",
-      "descriptionPlain": "Was 2020 als mutige Idee begann, ist zu einer Unternehmensgruppe gewachsen, die Häuser, Marken und Zukunft baut. Von unserer eigenen Produktionsstätte in Deutschland bis zu Vertriebsstrukturen in ganz Europa verwandeln wir Rohstoffe in Lebensräume und Ideen in erfolgreiche Unternehmen. Bei jedem Projekt stellen wir uns eine Frage: Wie können wir das besser machen?",
+      "description": "Was 2020 als mutige Idee begann, ist zu einer Unternehmensgruppe gewachsen, die {bold1}. Von unserer eigenen Produktionsstätte in Polen bis zu Vertriebsstrukturen in ganz Europa verwandeln wir Rohstoffe in {bold2} und Ideen in {bold3}. Bei jedem Projekt stellen wir uns eine Frage: Wie können wir das besser machen?",
+      "descriptionPlain": "Was 2020 als mutige Idee begann, ist zu einer Unternehmensgruppe gewachsen, die Häuser, Marken und Zukunft baut. Von unserer eigenen Produktionsstätte in Polen bis zu Vertriebsstrukturen in ganz Europa verwandeln wir Rohstoffe in Lebensräume und Ideen in erfolgreiche Unternehmen. Bei jedem Projekt stellen wir uns eine Frage: Wie können wir das besser machen?",
       "highlight": "Modulhäuser, Tiny Houses und nachhaltige Marken — gebaut von einem Team, das global denkt.",
       "bold1": "Häuser, Marken und Zukunft baut",
       "bold2": "Lebensräume",
@@ -52,7 +52,7 @@
       "closing": "Verschiedene Hintergründe, eine Mission."
     },
     "innovation": {
-      "description": "In unserer Produktionshalle in Kierspe wird aus rohem Holz das zukünftige Zuhause von jemandem. Berghaus — unser Flaggschiff — entwirft, baut und liefert Modulhäuser und Tiny Houses, die beweisen, dass nachhaltiges Wohnen keinen Kompromiss bedeutet. Jede Einheit wird nach Wunsch konfiguriert, von Hand gefertigt und europaweit geliefert.",
+      "description": "In unserer Produktionshalle in einem Krakauer Vorort in Südpolen wird aus rohem Holz das zukünftige Zuhause von jemandem. Berghaus — unser Flaggschiff — entwirft, baut und liefert Modulhäuser und Tiny Houses, die beweisen, dass nachhaltiges Wohnen keinen Kompromiss bedeutet. Jede Einheit wird nach Wunsch konfiguriert, von Hand gefertigt und europaweit geliefert.",
       "closing": "Wir lagern Qualität nicht aus. Wir verantworten jeden Schritt — vom ersten Schnitt bis zum Haustürschlüssel."
     },
     "stats": {
@@ -70,13 +70,13 @@
   "about": {
     "title": "Über uns",
     "subtitle": "Unsere Geschichte",
-    "story": "Isella Group wurde 2020 von Dennis Czekalla mit einer klaren Mission gegründet: innovative Projekte aufzubauen, die etwas bewegen. Unser Flaggschiffprojekt Berghaus — Tiny House & Modulhäuser entwirft und fertigt nachhaltiges Wohnen in unserer eigenen Produktionsstätte in Targowisko, Polen. Über den Bau hinaus treiben wir Innovation voran — mit ThriveTalk, einer Public-Speaking-Community, und BECZ, unserem Venture für KI-Automatisierung. Von einer mutigen Idee zu einem Portfolio zukunftsweisender Marken — wir bauen weiter.",
+    "story": "Isella Group wurde 2020 von Dennis mit einer klaren Mission gegründet: innovative Projekte aufzubauen, die etwas bewegen. Unser Flaggschiffprojekt Berghaus — Tiny House & Modulhäuser entwirft und fertigt nachhaltiges Wohnen in unserer eigenen Produktionsstätte in Targowisko, Polen. Über den Bau hinaus treiben wir Innovation voran — mit ThriveTalk, einer Public-Speaking-Community, und BECZ, unserem Venture für KI-Automatisierung. Von einer mutigen Idee zu einem Portfolio zukunftsweisender Marken — wir bauen weiter.",
     "team": {
       "title": "Unser Team",
       "description": "Unsere Belegschaft besteht aus ambitionierten, kreativen Fachkräften, die sich durch große kulturelle und sprachliche Vielfalt auszeichnen. Die Teammitglieder bringen vielfältige Expertise in verschiedenen Disziplinen mit, darunter Marketing, Vertrieb, Projektmanagement, Verwaltung, Architektur und Bauwesen.",
       "members": {
         "dennis": {
-          "name": "Dennis Czekalla",
+          "name": "Dennis",
           "role": "CEO & Gründer"
         }
       }
@@ -86,11 +86,11 @@
       "description": "Wir setzen uns dafür ein, nachhaltige Wohnlösungen zu schaffen und Marken aufzubauen, die einen Unterschied machen — angetrieben von einem internationalen Team und einem praxisnahen Ansatz."
     },
     "timeline": {
-      "milestone1": { "year": "2020", "text": "Gegründet von Dennis Czekalla mit einer mutigen Vision für innovatives Business" },
+      "milestone1": { "year": "2020", "text": "Gegründet von Dennis mit einer mutigen Vision für innovatives Business" },
       "milestone2": { "year": "2021", "text": "Eigene Produktionsstätte in Targowisko 579, 32-015 Kłaj, Polen errichtet" },
       "milestone3": { "year": "2023", "text": "Gründung der ThriveTalk Public-Speaking-Community" },
-      "milestone4": { "year": "2025", "text": "Erste 100 Häuser gebaut" },
-      "milestone5": { "year": "2026", "text": "BECZ gegründet — KI-Automatisierung und Beratung, um Unternehmen bei der Prozessoptimierung und intelligentem Wachstum zu unterstützen" }
+      "milestone4": { "year": "2025", "text": "BECZ gegründet — KI-Automatisierung und Beratung, um Unternehmen bei der Prozessoptimierung und intelligentem Wachstum zu unterstützen" },
+      "milestone5": { "year": "2026", "text": "Erste 100 Häuser gebaut" }
     }
   },
   "projects": {
@@ -98,7 +98,7 @@
     "subtitle": "Entdecke unsere Vorhaben",
     "berghaus": {
       "title": "Berghaus — Tiny House & Modulhäuser",
-      "description": "Unser Flaggschiffprojekt: Modulhäuser und Tiny Houses aus hochwertigen Naturmaterialien, gefertigt in unserer eigenen Produktion in Kierspe, Deutschland. Individuell konfigurierbar und seit 2022 in Eigenproduktion.",
+      "description": "Unser Flaggschiffprojekt: Modulhäuser und Tiny Houses aus hochwertigen Naturmaterialien, gefertigt in unserer eigenen Produktion in Targowisko, Polen. Individuell konfigurierbar und seit 2022 in Eigenproduktion.",
       "cta": "Berghaus besuchen"
     },
     "brands": {
@@ -113,13 +113,13 @@
       },
       "denniscz": {
         "title": "dennis.cz",
-        "description": "Persönliche Marke von CEO Dennis Czekalla — Speaker, Unternehmer und Ausdauersportler."
+        "description": "Persönliche Marke von CEO Dennis — Speaker, Unternehmer und Ausdauersportler."
       }
     },
     "production": {
       "title": "Produktionsstätte",
-      "description": "Unsere Häuser werden in unserer Produktionsstätte in Kierspe, Deutschland gefertigt.",
-      "address": "Beethovenstr. 9, 58566 Kierspe, Deutschland"
+      "description": "Unsere Häuser werden in unserer Produktionsstätte in Targowisko, Polen gefertigt.",
+      "address": "Targowisko 579, 32-015 Kłaj, Polen"
     }
   },
   "career": {
@@ -135,13 +135,13 @@
     "jobs": {
       "production": {
         "title": "Produktionsmitarbeiter",
-        "location": "Kierspe, Deutschland",
+        "location": "Targowisko, Polen",
         "type": "Vollzeit",
         "description": "Werde Teil unseres Produktionsteams beim Bau von Modulhäusern und Tiny Houses. Erfahrung in Holzverarbeitung oder Bau ist von Vorteil."
       },
       "sales": {
         "title": "Vertriebsmanager",
-        "location": "Kierspe, Deutschland / Remote",
+        "location": "Targowisko, Polen / Remote",
         "type": "Vollzeit",
         "description": "Treibe das Wachstum voran, indem du Kunden mit unseren nachhaltigen Wohnlösungen verbindest. Internationale Erfahrung bevorzugt."
       },
