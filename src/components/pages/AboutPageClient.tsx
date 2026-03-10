@@ -587,7 +587,7 @@ export default function AboutPageClient() {
 
             {/* Team Members */}
             {(['chris', 'vanya', 'anna', 'wojciech'] as const).map((member, i) => {
-              const hasPhoto = member === 'wojciech';
+              const hasPhoto = member === 'wojciech' || member === 'chris';
               return (
                 <div
                   key={member}
