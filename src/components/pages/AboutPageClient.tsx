@@ -629,21 +629,48 @@ export default function AboutPageClient() {
       {/* ═══════ Section 3b: Berghaus Production Team ═══════ */}
       <section className="bg-white py-20 px-4 md:py-28">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-isella-blue md:text-4xl">
-            {t('about.productionTeam.title')}
-          </h2>
+          <div className="flex items-baseline justify-between gap-4 flex-wrap">
+            <h2 className="text-3xl font-bold text-isella-blue md:text-4xl">
+              {t('about.productionTeam.title')}
+            </h2>
+            <a
+              href="https://berghaus.house"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-isella-orange font-semibold hover:underline"
+            >
+              berghaus.house
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </div>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
             {t('about.productionTeam.description')}
           </p>
-          <div className="mt-10 relative rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/team/berghaus-production-team.jpg"
-              alt={t('about.productionTeam.title')}
-              width={1920}
-              height={1080}
-              className="w-full h-auto object-cover"
-              sizes="(max-width: 1024px) 100vw, 1024px"
-            />
+          {/* Horizontal scrollable gallery */}
+          <div className="mt-10 -mx-4 px-4 overflow-x-auto scrollbar-hide">
+            <div className="flex gap-4 w-max">
+              {[
+                { src: '/images/team/berghaus-production-team.jpg', w: 1920, h: 1080 },
+                { src: '/images/team/berghaus-facility.jpg', w: 1920, h: 1440 },
+                { src: '/images/team/berghaus-woodwork.jpg', w: 1080, h: 1620 },
+                { src: '/images/team/berghaus-construction.jpg', w: 1920, h: 1280 },
+                { src: '/images/team/berghaus-workshop.jpg', w: 1920, h: 1280 },
+              ].map((img) => (
+                <div
+                  key={img.src}
+                  className="relative flex-shrink-0 rounded-2xl overflow-hidden shadow-lg h-72 md:h-96"
+                  style={{ width: img.h > img.w ? '220px' : '500px' }}
+                >
+                  <Image
+                    src={img.src}
+                    alt="Berghaus production"
+                    fill
+                    className="object-cover"
+                    sizes="500px"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
