@@ -675,6 +675,42 @@ export default function AboutPageClient() {
         </div>
       </section>
 
+      {/* ═══════ Section 3c: Thrive Community ═══════ */}
+      <section className="bg-isella-gray py-20 px-4 md:py-28">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold text-isella-blue md:text-4xl">
+            {t('about.thriveCommunity.title')}
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
+            {t('about.thriveCommunity.description')}
+          </p>
+          {/* Horizontal scrollable gallery */}
+          <div className="mt-10 -mx-4 px-4 overflow-x-auto scrollbar-hide">
+            <div className="flex gap-4 w-max">
+              {[
+                '/images/thrive/thrive-1.jpg',
+                '/images/thrive/thrive-2.jpg',
+                '/images/thrive/thrive-3.jpg',
+                '/images/thrive/thrive-4.jpg',
+              ].map((src) => (
+                <div
+                  key={src}
+                  className="relative flex-shrink-0 rounded-2xl overflow-hidden shadow-lg h-72 md:h-96 w-[500px]"
+                >
+                  <Image
+                    src={src}
+                    alt="Thrive Community"
+                    fill
+                    className="object-cover"
+                    sizes="500px"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════ Section 4: Mission — Cinematic full-width ═══════ */}
       <section className="relative min-h-[500px] overflow-hidden md:min-h-[550px]">
         {/* Background image with parallax */}
