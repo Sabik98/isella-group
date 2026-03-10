@@ -586,28 +586,42 @@ export default function AboutPageClient() {
             </a>
 
             {/* Team Members */}
-            {(['chris', 'vanya', 'anna', 'wojciech'] as const).map((member, i) => (
-              <div
-                key={member}
-                className={`text-center animate-scale-in ${teamSection.inView ? 'in-view' : ''}`}
-                style={{
-                  animationDelay: teamSection.inView ? `${0.3 + (i + 1) * 0.15}s` : '0s',
-                  transform: i === 1 ? 'translateY(12px)' : undefined,
-                }}
-              >
-                <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 bg-gradient-to-br from-isella-blue/10 to-isella-blue/5 flex items-center justify-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                  <div className="w-20 h-20 rounded-full bg-isella-blue/15 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-isella-blue/60">
-                      {t(`about.team.members.${member}.name`).charAt(0)}
-                    </span>
+            {(['chris', 'vanya', 'anna', 'wojciech'] as const).map((member, i) => {
+              const hasPhoto = member === 'wojciech';
+              return (
+                <div
+                  key={member}
+                  className={`text-center animate-scale-in ${teamSection.inView ? 'in-view' : ''}`}
+                  style={{
+                    animationDelay: teamSection.inView ? `${0.3 + (i + 1) * 0.15}s` : '0s',
+                    transform: i === 1 ? 'translateY(12px)' : undefined,
+                  }}
+                >
+                  <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    {hasPhoto ? (
+                      <Image
+                        src={`/images/team/${member}.jpg`}
+                        alt={t(`about.team.members.${member}.name`)}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-isella-blue/10 to-isella-blue/5 flex items-center justify-center">
+                        <div className="w-20 h-20 rounded-full bg-isella-blue/15 flex items-center justify-center">
+                          <span className="text-3xl font-bold text-isella-blue/60">
+                            {t(`about.team.members.${member}.name`).charAt(0)}
+                          </span>
+                        </div>
+                      </div>
+                    )}
                   </div>
+                  <h4 className="font-bold text-isella-blue">
+                    {t(`about.team.members.${member}.name`)}
+                  </h4>
+                  <p className="text-sm text-gray-500">{t(`about.team.members.${member}.role`)}</p>
                 </div>
-                <h4 className="font-bold text-isella-blue">
-                  {t(`about.team.members.${member}.name`)}
-                </h4>
-                <p className="text-sm text-gray-500">{t(`about.team.members.${member}.role`)}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
