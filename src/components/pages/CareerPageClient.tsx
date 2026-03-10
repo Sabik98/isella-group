@@ -36,51 +36,15 @@ export default function CareerPageClient() {
             </p>
           </div>
 
-          {/* Open Positions */}
-          <div className="mb-16">
-            <div className="flex items-center gap-3 mb-6">
-              <Briefcase className="w-8 h-8 text-isella-orange" />
-              <h2 className="text-3xl md:text-4xl font-bold text-isella-blue">
-                {t('career.positions.title')}
-              </h2>
-            </div>
-            <p className="text-lg leading-relaxed text-gray-700 mb-10">
-              {t('career.positions.description')}
-            </p>
-
-            {/* Job Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {jobKeys.map((key) => (
-                <div
-                  key={key}
-                  className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
-                >
-                  <h3 className="text-xl font-bold text-isella-blue mb-3">
-                    {t(`career.jobs.${key}.title`)}
-                  </h3>
-                  <div className="flex flex-wrap gap-3 mb-4">
-                    <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
-                      <MapPin className="w-4 h-4 text-isella-orange" />
-                      {t(`career.jobs.${key}.location`)}
-                    </span>
-                    <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
-                      <Clock className="w-4 h-4 text-isella-orange" />
-                      {t(`career.jobs.${key}.type`)}
-                    </span>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed text-sm mb-4">
-                    {t(`career.jobs.${key}.description`)}
-                  </p>
-                  <a
-                    href={`mailto:info@isella-group.com?subject=${encodeURIComponent(t(`career.jobs.${key}.title`))}`}
-                    className="inline-flex items-center gap-2 text-isella-orange font-semibold text-sm hover:text-isella-orange-dark transition-colors"
-                  >
-                    <Mail className="w-4 h-4" />
-                    {t('career.apply')}
-                  </a>
-                </div>
-              ))}
-            </div>
+          {/* Contact CTA */}
+          <div className="text-center">
+            <a
+              href="mailto:info@isella-group.com"
+              className="inline-flex items-center gap-2 bg-isella-orange text-white font-semibold px-8 py-4 rounded-xl hover:bg-isella-orange/90 transition-colors text-lg"
+            >
+              <Mail className="w-5 h-5" />
+              {t('career.apply')}
+            </a>
           </div>
         </div>
       </section>
